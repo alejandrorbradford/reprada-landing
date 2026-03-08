@@ -2,8 +2,11 @@ import { Check, Zap, Users, Building2 } from "lucide-react";
 import SectionLabel from "../components/SectionLabel";
 import Button from "../components/Button";
 
+const APP_URL = import.meta.env.VITE_APP_URL || "http://localhost:3000";
+
 const plans = [
   {
+    planId: "starter",
     name: "Starter",
     price: 49,
     period: "per seat / month",
@@ -20,11 +23,13 @@ const plans = [
       "Call history & dashboard",
     ],
     cta: "Start free trial",
+    ctaHref: `${APP_URL}/login?redirect=${encodeURIComponent("/checkout?plan=starter")}`,
     ctaVariant: "primary",
     popular: false,
     icon: Zap,
   },
   {
+    planId: "pro",
     name: "Pro",
     price: 99,
     period: "per seat / month",
@@ -41,11 +46,13 @@ const plans = [
       "Dedicated support",
     ],
     cta: "Start free trial",
+    ctaHref: `${APP_URL}/login?redirect=${encodeURIComponent("/checkout?plan=pro")}`,
     ctaVariant: "primary",
     popular: true,
     icon: Zap,
   },
   {
+    planId: "teams",
     name: "Teams",
     price: 199,
     period: "per month",
@@ -65,6 +72,7 @@ const plans = [
       "Extra seats: +$35/seat",
     ],
     cta: "Start free trial",
+    ctaHref: `${APP_URL}/login?redirect=${encodeURIComponent("/checkout?plan=teams")}`,
     ctaVariant: "primary",
     popular: false,
     icon: Users,

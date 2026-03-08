@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   Mic2,
   Crown,
@@ -59,17 +60,27 @@ const megaMenus = [
 ];
 
 function MegaMenuDropdown({ menu, isOpen, onClose }) {
-  if (!isOpen) return null;
-
   return (
-    <>
-      <div
-        className="fixed inset-0 z-40"
-        aria-hidden="true"
-        onClick={onClose}
-      />
-      <div className="absolute left-0 top-full mt-0 pt-2 z-50">
-        <div className="bg-white border border-border rounded-xl shadow-lg py-6 px-8 min-w-[320px]">
+    <AnimatePresence>
+      {isOpen && (
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
+            className="fixed inset-0 z-40"
+            aria-hidden="true"
+            onClick={onClose}
+          />
+          <motion.div
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute left-0 top-full mt-0 pt-2 z-50"
+          >
+            <div className="bg-white border border-border rounded-xl shadow-lg py-6 px-8 min-w-[320px]">
           <div className="grid gap-y-4">
             {menu.columns.map((col, colIdx) => (
               <div key={colIdx} className="space-y-4">
@@ -98,8 +109,10 @@ function MegaMenuDropdown({ menu, isOpen, onClose }) {
             ))}
           </div>
         </div>
-      </div>
-    </>
+          </motion.div>
+        </>
+      )}
+    </AnimatePresence>
   );
 }
 
@@ -117,10 +130,16 @@ export default function Header() {
   return (
     <>
       {/* Announcement bar */}
-      <div className="bg-primary text-white text-center py-2 text-sm font-medium">
-        <Link to="/#features" className="hover:underline">
-          RepRadar — AI-powered sales call analysis. Start for free →
-        </Link>
+      <div className="bg-primary text-white text-center py-2 text-sm font-medium overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+        >
+          <Link to="/#features" className="hover:underline">
+            RepRadar — AI-powered sales call analysis. Start for free →
+          </Link>
+        </motion.div>
       </div>
 
       {/* Navbar */}
@@ -192,8 +211,15 @@ export default function Header() {
         </div>
 
         {/* Mobile menu */}
-        {mobileOpen && (
-          <div className="lg:hidden border-t border-border bg-white px-5 py-4 space-y-2">
+        <AnimatePresence>
+          {mobileOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+              className="lg:hidden border-t border-border bg-white px-5 py-4 space-y-2 overflow-hidden"
+            >
             <Link to="/for-sales-reps" className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>For Sales Reps</Link>
             <Link to="/for-teams-leaders" className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>For Teams & Leaders</Link>
             <Link to="/enterprise" className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>Enterprise</Link>
@@ -205,8 +231,9 @@ export default function Header() {
               <Button variant="ghost" className="flex-1">Sign in</Button>
               <Button variant="primary" className="flex-1">Get started</Button>
             </div>
-          </div>
-        )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </header>
     </>
   );

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import SectionLabel from "./SectionLabel";
 
 const testimonials = [
@@ -21,23 +22,63 @@ const testimonials = [
   },
 ];
 
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1, delayChildren: 0.1 },
+  },
+};
+
+const card = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+  },
+};
+
 export default function Testimonials() {
   return (
     <section className="py-section sm:py-section-lg">
       <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <SectionLabel center>Testimonials</SectionLabel>
-          <h2 className="font-display font-bold text-section text-primary tracking-tight">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          variants={container}
+          className="text-center mb-16"
+        >
+          <motion.div variants={card}>
+            <SectionLabel center>Testimonials</SectionLabel>
+          </motion.div>
+          <motion.h2
+            variants={card}
+            className="font-display font-bold text-section text-primary tracking-tight"
+          >
             Don't just take our word for it
-          </h2>
-          <p className="mt-4 text-body text-secondary max-w-2xl mx-auto">
+          </motion.h2>
+          <motion.p
+            variants={card}
+            className="mt-4 text-body text-secondary max-w-2xl mx-auto"
+          >
             Sales leaders and teams trust RepRadar to coach every rep.
-          </p>
-        </div>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          </motion.p>
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-40px" }}
+          variants={container}
+          className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+        >
           {testimonials.map((t) => (
-            <div
+            <motion.div
               key={t.name}
+              variants={card}
+              whileHover={{ y: -6, boxShadow: "0 20px 40px -15px rgba(0,0,0,0.1)" }}
+              transition={{ duration: 0.2 }}
               className="p-8 rounded-xl bg-white border border-border"
             >
               <p className="text-body text-primary">{t.quote}</p>
@@ -50,9 +91,9 @@ export default function Testimonials() {
                   <p className="text-sm text-secondary">{t.title}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

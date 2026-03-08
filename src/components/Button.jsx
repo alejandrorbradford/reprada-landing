@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const APP_URL = import.meta.env.VITE_APP_URL || "http://localhost:3000";
 
-const base = "inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-[15px] font-medium transition-colors";
+const base = "inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-[15px] font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]";
 
 const variants = {
   primary: `${base} bg-primary text-white hover:bg-black`,

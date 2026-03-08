@@ -1,7 +1,7 @@
 export default function CallReportCard() {
   return (
     <div
-      className="w-full max-w-lg mx-auto bg-subtle border border-border rounded-2xl p-8 -rotate-1 shadow-[0_1px_3px_rgba(0,0,0,0.08)]"
+      className="w-full max-w-lg mx-auto bg-subtle border border-border rounded-2xl p-8 -rotate-1 shadow-[0_1px_3px_rgba(0,0,0,0.08)] animate-float"
     >
       <div className="flex items-start justify-between mb-6">
         <div>
