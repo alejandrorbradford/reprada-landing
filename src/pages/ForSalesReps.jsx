@@ -1,47 +1,29 @@
-import { Mic2, Sparkles, Mail, Target, TrendingUp, Zap } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { Sparkles, Mail, Target, Zap } from "lucide-react";
 import SectionLabel from "../components/SectionLabel";
 import Button from "../components/Button";
 import CallReportCard from "../components/mockups/CallReportCard";
 import AnalysisPreview from "../components/mockups/AnalysisPreview";
 import EmailReportPreview from "../components/mockups/EmailReportPreview";
+import { useLocale } from "../contexts/LocaleContext";
 
-const valueProps = [
-  {
-    icon: Target,
-    title: "Get scored on every call",
-    desc: "AI analyzes discovery, objections, closing, and rapport using a strict rubric. Know exactly how you performed — no guesswork, no waiting for manager feedback.",
-  },
-  {
-    icon: Sparkles,
-    title: "Actionable improvement tips",
-    desc: "Get specific suggestions tailored to your performance. Not generic advice — insights like 'Ask one more discovery question before presenting' so you know exactly what to do next.",
-  },
-  {
-    icon: Mail,
-    title: "Reports in your inbox",
-    desc: "Summary, key moments, and tips delivered after every call. No need to log in — insights come to you. Review on the go between meetings.",
-  },
-];
+const APP_URL = import.meta.env.VITE_APP_URL || "http://localhost:3000";
 
-const howItWorks = [
-  {
-    step: "01",
-    title: "Connect your calendar",
-    desc: "One-click Google Calendar sync. RepRadar joins your meetings as a bot — no manual setup, no extra steps.",
-  },
-  {
-    step: "02",
-    title: "Calls get analyzed automatically",
-    desc: "AI transcribes and scores every call. Discovery quality, objection handling, closing technique, and rapport — all measured against a consistent rubric.",
-  },
-  {
-    step: "03",
-    title: "Improve call by call",
-    desc: "See your talk ratio (40–50% is the sweet spot), key moments, and improvement tips. Track your progress over time.",
-  },
+const valuePropIcons = [Target, Sparkles, Mail];
+const valuePropKeys = ["scored", "tips", "reports"];
+
+const howItWorksSteps = [
+  { step: "01", key: "step1" },
+  { step: "02", key: "step2" },
+  { step: "03", key: "step3" },
 ];
 
 export default function ForSalesReps() {
+  const { t } = useTranslation();
+  const { basePath } = useLocale();
+  const appRegisterHref = `${APP_URL}${basePath || ""}/register`;
+  const appLoginHref = `${APP_URL}${basePath || ""}/login`;
+
   return (
     <>
       {/* Hero */}
@@ -49,20 +31,24 @@ export default function ForSalesReps() {
         <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <SectionLabel>For Sales Reps</SectionLabel>
+              <SectionLabel>{t("pages.forSalesReps.hero.label")}</SectionLabel>
               <h1 className="font-display font-bold text-hero sm:text-[60px] text-primary tracking-tight">
-                Get scored on every call. Improve without the guesswork.
+                {t("pages.forSalesReps.hero.headline")}
               </h1>
               <p className="mt-6 text-body text-secondary max-w-lg">
-                RepRadar analyzes your calls with AI — scores, talk ratio, key moments, and improvement tips.
-                Connect Google Calendar and get insights automatically after every meeting. No more wondering
-                how you did or what to work on next.
+                {t("pages.forSalesReps.hero.subheadline")}
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                <Button variant="primary">Start for free</Button>
-                <Button variant="secondary">Sign in</Button>
+                <Button variant="primary" href={appRegisterHref}>
+                  {t("pages.forSalesReps.hero.startFree")}
+                </Button>
+                <Button variant="secondary" href={appLoginHref}>
+                  {t("pages.forSalesReps.hero.signIn")}
+                </Button>
               </div>
-              <p className="mt-6 text-label text-secondary">No credit card required</p>
+              <p className="mt-6 text-label text-secondary">
+                {t("pages.forSalesReps.hero.noCreditCard")}
+              </p>
             </div>
             <div className="flex justify-center lg:justify-end">
               <div className="w-full max-w-md">
@@ -77,22 +63,24 @@ export default function ForSalesReps() {
       <section className="py-section sm:py-section-lg bg-subtle">
         <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SectionLabel center>How it works</SectionLabel>
+            <SectionLabel center>{t("pages.forSalesReps.howItWorks.label")}</SectionLabel>
             <h2 className="font-display font-bold text-section text-primary tracking-tight">
-              Three steps to better calls
+              {t("pages.forSalesReps.howItWorks.title")}
             </h2>
             <p className="mt-4 text-body text-secondary max-w-2xl mx-auto">
-              Set it once. Get insights on every call. No manual work.
+              {t("pages.forSalesReps.howItWorks.subtitle")}
             </p>
           </div>
           <div className="grid gap-8 sm:grid-cols-3">
-            {howItWorks.map((item) => (
-              <div key={item.step} className="bg-white border border-border rounded-xl p-6">
-                <span className="font-display font-bold text-3xl text-border">{item.step}</span>
+            {howItWorksSteps.map(({ step, key }) => (
+              <div key={step} className="bg-white border border-border rounded-xl p-6">
+                <span className="font-display font-bold text-3xl text-border">{step}</span>
                 <h3 className="mt-4 font-display font-semibold text-feature text-primary">
-                  {item.title}
+                  {t(`pages.forSalesReps.howItWorks.${key}Title`)}
                 </h3>
-                <p className="mt-3 text-body text-secondary">{item.desc}</p>
+                <p className="mt-3 text-body text-secondary">
+                  {t(`pages.forSalesReps.howItWorks.${key}Desc`)}
+                </p>
               </div>
             ))}
           </div>
@@ -106,14 +94,12 @@ export default function ForSalesReps() {
             {/* AI scores */}
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div>
-                <SectionLabel>AI call analysis</SectionLabel>
+                <SectionLabel>{t("pages.forSalesReps.aiAnalysis.label")}</SectionLabel>
                 <h2 className="font-display font-bold text-section text-primary tracking-tight">
-                  Know exactly how you performed
+                  {t("pages.forSalesReps.aiAnalysis.title")}
                 </h2>
                 <p className="mt-4 text-body text-secondary max-w-lg">
-                  Every call gets a 0–100 score across discovery, objection handling, closing, and rapport.
-                  Key moments are flagged with timestamps — objection at 2:15, strong discovery question at 5:30.
-                  No more vague feedback. Just clear, actionable data.
+                  {t("pages.forSalesReps.aiAnalysis.desc")}
                 </p>
               </div>
               <div className="flex justify-center lg:justify-end">
@@ -126,13 +112,12 @@ export default function ForSalesReps() {
             {/* Email reports */}
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <SectionLabel>Email reports</SectionLabel>
+                <SectionLabel>{t("pages.forSalesReps.emailReports.label")}</SectionLabel>
                 <h2 className="font-display font-bold text-section text-primary tracking-tight">
-                  Insights delivered to your inbox
+                  {t("pages.forSalesReps.emailReports.title")}
                 </h2>
                 <p className="mt-4 text-body text-secondary max-w-lg">
-                  When the call ends, your report is on its way. Summary, key moments, and improvement tips —
-                  no need to log in. Review between meetings, on your phone, whenever it works for you.
+                  {t("pages.forSalesReps.emailReports.desc")}
                 </p>
               </div>
               <div className="flex justify-center lg:justify-start order-1 lg:order-2">
@@ -149,23 +134,27 @@ export default function ForSalesReps() {
       <section className="py-section sm:py-section-lg bg-subtle">
         <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SectionLabel center>Built for reps</SectionLabel>
+            <SectionLabel center>{t("pages.forSalesReps.builtForReps.label")}</SectionLabel>
             <h2 className="font-display font-bold text-section text-primary tracking-tight">
-              Everything you need to improve
+              {t("pages.forSalesReps.builtForReps.title")}
             </h2>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
-            {valueProps.map((item) => {
-              const Icon = item.icon;
+            {valuePropKeys.map((key, i) => {
+              const Icon = valuePropIcons[i];
+              const titleKey = key === "scored" ? "scoredTitle" : key === "tips" ? "tipsTitle" : "reportsTitle";
+              const descKey = key === "scored" ? "scoredDesc" : key === "tips" ? "tipsDesc" : "reportsDesc";
               return (
-                <div key={item.title} className="bg-white border border-border rounded-xl p-6">
+                <div key={key} className="bg-white border border-border rounded-xl p-6">
                   <div className="w-12 h-12 rounded-xl bg-subtle border border-border flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
                   </div>
                   <h3 className="font-display font-semibold text-feature text-primary">
-                    {item.title}
+                    {t(`pages.forSalesReps.builtForReps.${titleKey}`)}
                   </h3>
-                  <p className="mt-3 text-body text-secondary">{item.desc}</p>
+                  <p className="mt-3 text-body text-secondary">
+                    {t(`pages.forSalesReps.builtForReps.${descKey}`)}
+                  </p>
                 </div>
               );
             })}
@@ -179,11 +168,10 @@ export default function ForSalesReps() {
           <div className="bg-primary text-white rounded-2xl p-8 sm:p-12 text-center">
             <Zap className="w-10 h-10 mx-auto mb-4 opacity-80" strokeWidth={1.5} />
             <h2 className="font-display font-bold text-section tracking-tight">
-              The 40–50% talk ratio sweet spot
+              {t("pages.forSalesReps.talkRatio.title")}
             </h2>
             <p className="mt-4 text-body max-w-2xl mx-auto opacity-90">
-              RepRadar tracks how much you talk vs. the prospect. The best discovery calls land in the 40–50% range —
-              enough to guide the conversation, not dominate it. Get real-time feedback so you can adjust.
+              {t("pages.forSalesReps.talkRatio.desc")}
             </p>
           </div>
         </div>
@@ -193,14 +181,18 @@ export default function ForSalesReps() {
       <section className="py-section sm:py-section-lg">
         <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display font-bold text-section text-primary tracking-tight">
-            Ready to improve every call?
+            {t("pages.forSalesReps.cta.title")}
           </h2>
           <p className="mt-4 text-body text-secondary max-w-xl mx-auto">
-            Start for free. Connect your calendar and get your first analysis within minutes.
+            {t("pages.forSalesReps.cta.subtitle")}
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="primary">Start for free</Button>
-            <Button variant="secondary">Sign in</Button>
+            <Button variant="primary" href={appRegisterHref}>
+              {t("pages.forSalesReps.cta.startFree")}
+            </Button>
+            <Button variant="secondary" href={appLoginHref}>
+              {t("pages.forSalesReps.cta.signIn")}
+            </Button>
           </div>
         </div>
       </section>

@@ -1,16 +1,18 @@
+import { useTranslation } from "react-i18next";
 import SectionLabel from "../components/SectionLabel";
 
 export default function Privacy() {
+  const { t } = useTranslation();
   return (
     <>
       <section className="pt-24 pb-16 sm:pt-32 sm:pb-24">
         <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <SectionLabel center>Legal</SectionLabel>
+          <SectionLabel center>{t("pages.privacy.label")}</SectionLabel>
           <h1 className="font-display font-bold text-hero sm:text-[60px] text-primary tracking-tight max-w-3xl mx-auto">
-            Privacy Policy
+            {t("pages.privacy.title")}
           </h1>
           <p className="mt-6 text-body text-secondary max-w-2xl mx-auto">
-            Last updated: February 2025
+            {t("pages.privacy.updated")}
           </p>
         </div>
       </section>
@@ -21,65 +23,45 @@ export default function Privacy() {
             <div className="space-y-12 text-body text-secondary">
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  Information we collect
+                  {t("pages.privacy.infoWeCollectTitle")}
                 </h2>
-                <p>
-                  We collect information you provide directly (name, email, company) when you sign up,
-                  contact us, or use our services. We also collect call transcripts and meeting data
-                  when you connect your calendar and use RepRadar to analyze calls.
-                </p>
+                <p>{t("pages.privacy.infoWeCollect")}</p>
               </div>
 
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  How we use your information
+                  {t("pages.privacy.howWeUseTitle")}
                 </h2>
-                <p>
-                  We use your information to provide, maintain, and improve RepRadar; to generate
-                  AI-powered call analysis and insights; to communicate with you; and to comply with
-                  legal obligations. We do not sell your personal information.
-                </p>
+                <p>{t("pages.privacy.howWeUse")}</p>
               </div>
 
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  Cookies and tracking
+                  {t("pages.privacy.cookiesTitle")}
                 </h2>
-                <p>
-                  We use cookies and similar technologies to operate our service, remember your
-                  preferences, and understand how you use RepRadar. You can control cookies through
-                  your browser settings.
-                </p>
+                <p>{t("pages.privacy.cookies")}</p>
               </div>
 
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  Third parties
+                  {t("pages.privacy.thirdPartiesTitle")}
                 </h2>
-                <p>
-                  We work with service providers (e.g., hosting, analytics, AI) to operate
-                  RepRadar. These providers are contractually bound to protect your data. We may
-                  share information when required by law or to protect our rights.
-                </p>
+                <p>{t("pages.privacy.thirdParties")}</p>
               </div>
 
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  Data retention and deletion
+                  {t("pages.privacy.dataRetentionTitle")}
                 </h2>
-                <p>
-                  You can delete your data at any time from Settings. We retain data as needed to
-                  provide our services and as required by law. Deleted data is removed from our
-                  systems within 30 days.
-                </p>
+                <p>{t("pages.privacy.dataRetention")}</p>
               </div>
 
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  Contact us
+                  {t("pages.privacy.contactUsTitle")}
                 </h2>
                 <p>
-                  For privacy-related questions, contact us at{" "}
+                  {t("pages.privacy.contactUsPrefix")}{" "}
                   <a href="mailto:privacy@repradar.com" className="text-primary hover:underline">
                     privacy@repradar.com
                   </a>

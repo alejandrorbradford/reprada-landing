@@ -1,25 +1,11 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import SectionLabel from "./SectionLabel";
 
-const testimonials = [
-  {
-    quote: "We switched from Gong. RepRadar's talk ratio metric alone changed how we coach — we show reps the numbers instead of guessing.",
-    name: "Sarah Chen",
-    title: "VP Sales, B2B SaaS (40 reps)",
-    avatar: "SC",
-  },
-  {
-    quote: "The key moments and improvement tips are spot-on. Our reps actually use them. Finally, AI that understands sales.",
-    name: "Marcus Rodriguez",
-    title: "Sales Manager, Fintech (12 reps)",
-    avatar: "MR",
-  },
-  {
-    quote: "Call reviews went from a weekly chore to a daily habit. Every rep knows exactly where to improve before their next 1:1.",
-    name: "Emily Foster",
-    title: "Director of Sales Ops, B2B software (25 reps)",
-    avatar: "EF",
-  },
+const testimonialKeys = [
+  { quoteKey: "testimonials.quote1", nameKey: "testimonials.name1", titleKey: "testimonials.title1", avatar: "SC" },
+  { quoteKey: "testimonials.quote2", nameKey: "testimonials.name2", titleKey: "testimonials.title2", avatar: "MR" },
+  { quoteKey: "testimonials.quote3", nameKey: "testimonials.name3", titleKey: "testimonials.title3", avatar: "EF" },
 ];
 
 const container = {
@@ -40,6 +26,7 @@ const card = {
 };
 
 export default function Testimonials() {
+  const { t } = useTranslation();
   return (
     <section className="py-section sm:py-section-lg">
       <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8">
@@ -51,19 +38,19 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <motion.div variants={card}>
-            <SectionLabel center>Testimonials</SectionLabel>
+            <SectionLabel center>{t("testimonials.label")}</SectionLabel>
           </motion.div>
           <motion.h2
             variants={card}
             className="font-display font-bold text-section text-primary tracking-tight"
           >
-            Don't just take our word for it
+            {t("testimonials.title")}
           </motion.h2>
           <motion.p
             variants={card}
             className="mt-4 text-body text-secondary max-w-2xl mx-auto"
           >
-            Sales leaders and teams trust RepRadar to coach every rep.
+            {t("testimonials.subtitle")}
           </motion.p>
         </motion.div>
         <motion.div
@@ -73,22 +60,22 @@ export default function Testimonials() {
           variants={container}
           className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
         >
-          {testimonials.map((t) => (
+          {testimonialKeys.map((item) => (
             <motion.div
-              key={t.name}
+              key={item.avatar}
               variants={card}
               whileHover={{ y: -6, boxShadow: "0 20px 40px -15px rgba(0,0,0,0.1)" }}
               transition={{ duration: 0.2 }}
               className="p-8 rounded-xl bg-white border border-border"
             >
-              <p className="text-body text-primary">{t.quote}</p>
+              <p className="text-body text-primary">{t(item.quoteKey)}</p>
               <div className="mt-6 flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-border flex items-center justify-center text-sm font-medium text-primary">
-                  {t.avatar}
+                  {item.avatar}
                 </div>
                 <div>
-                  <p className="font-medium text-primary">{t.name}</p>
-                  <p className="text-sm text-secondary">{t.title}</p>
+                  <p className="font-medium text-primary">{t(item.nameKey)}</p>
+                  <p className="text-sm text-secondary">{t(item.titleKey)}</p>
                 </div>
               </div>
             </motion.div>

@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+const APP_URL = import.meta.env.VITE_APP_URL || "http://localhost:3000";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Mic2,
@@ -11,47 +13,49 @@ import {
   X,
 } from "lucide-react";
 import Button from "./Button";
+import LanguageSelector from "./LanguageSelector";
+import { useLocale } from "../contexts/LocaleContext";
 
 const megaMenus = [
   {
-    label: "Solutions",
+    labelKey: "header.solutions",
     columns: [
       [
         {
           icon: Mic2,
-          title: "For Sales Reps",
-          subtitle: "Get scored on every call",
+          titleKey: "header.forSalesReps",
+          subtitleKey: "header.forSalesRepsSub",
           href: "/for-sales-reps",
         },
         {
           icon: Crown,
-          title: "For Teams & Leaders",
-          subtitle: "Visibility on performance",
+          titleKey: "header.forTeamsLeaders",
+          subtitleKey: "header.forTeamsLeadersSub",
           href: "/for-teams-leaders",
         },
         {
           icon: Shield,
-          title: "Enterprise",
-          subtitle: "Custom deployment",
+          titleKey: "header.enterprise",
+          subtitleKey: "header.enterpriseSub",
           href: "/enterprise",
         },
       ],
     ],
   },
   {
-    label: "Resources",
+    labelKey: "header.resources",
     columns: [
       [
         {
           icon: LifeBuoy,
-          title: "Help",
-          subtitle: "FAQs and support",
+          titleKey: "header.help",
+          subtitleKey: "header.helpSub",
           href: "/help",
         },
         {
           icon: PenLine,
-          title: "Blog",
-          subtitle: "Tips and updates",
+          titleKey: "header.blog",
+          subtitleKey: "header.blogSub",
           href: "/blog",
         },
       ],
@@ -59,7 +63,7 @@ const megaMenus = [
   },
 ];
 
-function MegaMenuDropdown({ menu, isOpen, onClose }) {
+function MegaMenuDropdown({ menu, isOpen, onClose, t, localizePath }) {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -82,14 +86,14 @@ function MegaMenuDropdown({ menu, isOpen, onClose }) {
           >
             <div className="bg-white border border-border rounded-xl shadow-lg py-6 px-8 min-w-[320px]">
           <div className="grid gap-y-4">
-            {menu.columns.map((col, colIdx) => (
+                {menu.columns.map((col, colIdx) => (
               <div key={colIdx} className="space-y-4">
                 {col.map((item) => {
                   const Icon = item.icon;
                   return (
                     <Link
-                      key={item.title}
-                      to={item.href}
+                      key={item.titleKey}
+                      to={localizePath(item.href)}
                       onClick={onClose}
                       className="flex gap-4 group block py-2 -mx-2 px-2 rounded-lg hover:bg-subtle/80 transition-colors"
                     >
@@ -98,9 +102,9 @@ function MegaMenuDropdown({ menu, isOpen, onClose }) {
                       </div>
                       <div>
                         <p className="font-semibold text-primary text-[15px]">
-                          {item.title}
+                          {t(item.titleKey)}
                         </p>
-                        <p className="text-sm text-secondary mt-0.5">{item.subtitle}</p>
+                        <p className="text-sm text-secondary mt-0.5">{t(item.subtitleKey)}</p>
                       </div>
                     </Link>
                   );
@@ -117,6 +121,8 @@ function MegaMenuDropdown({ menu, isOpen, onClose }) {
 }
 
 export default function Header() {
+  const { t } = useTranslation();
+  const { localizePath, basePath } = useLocale();
   const [scrolled, setScrolled] = useState(false);
   const [openMenu, setOpenMenu] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -136,8 +142,8 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.2 }}
         >
-          <Link to="/#features" className="hover:underline">
-            RepRadar — AI-powered sales call analysis. Start for free →
+          <Link to={localizePath("/") + "#features"} className="hover:underline">
+            {t("header.announcement")}
           </Link>
         </motion.div>
       </div>
@@ -152,7 +158,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-[62px]">
             {/* Logo */}
             <Link
-              to="/"
+              to={localizePath("/")}
               className="font-display font-semibold text-xl text-primary tracking-tight flex-shrink-0"
             >
               RepRadar
@@ -162,42 +168,50 @@ export default function Header() {
             <nav className="hidden lg:flex items-center gap-1">
               {megaMenus.map((menu) => (
                 <div
-                  key={menu.label}
+                  key={menu.labelKey}
                   className="relative"
-                  onMouseEnter={() => setOpenMenu(menu.label)}
+                  onMouseEnter={() => setOpenMenu(menu.labelKey)}
                   onMouseLeave={() => setOpenMenu(null)}
                 >
                   <button
                     className="px-4 py-2 text-[15px] font-medium text-border-dark hover:text-primary transition-colors flex items-center gap-1"
                   >
-                    {menu.label}
+                    {t(menu.labelKey)}
                   </button>
                   <MegaMenuDropdown
                     menu={menu}
-                    isOpen={openMenu === menu.label}
+                    isOpen={openMenu === menu.labelKey}
                     onClose={() => setOpenMenu(null)}
+                    t={t}
+                    localizePath={localizePath}
                   />
                 </div>
               ))}
               <Link
-                to="/pricing"
+                to={localizePath("/pricing")}
                 className="px-4 py-2 text-[15px] font-medium text-border-dark hover:text-primary transition-colors"
               >
-                Pricing
+                {t("header.pricing")}
               </Link>
               <Link
-                to="/contact"
+                to={localizePath("/contact")}
                 className="px-4 py-2 text-[15px] font-medium text-border-dark hover:text-primary transition-colors"
               >
-                Contact
+                {t("header.contact")}
               </Link>
             </nav>
 
-            {/* Far right: Sign in + Get started (desktop) / Hamburger (mobile) */}
+            {/* Far right: Language selector + Sign in + Get started (desktop) / Hamburger (mobile) */}
             <div className="flex items-center gap-4">
               <div className="hidden lg:flex items-center gap-4">
-                <Button variant="ghost">Sign in</Button>
-                <Button variant="primary">Get started</Button>
+                <LanguageSelector />
+                <Button variant="ghost" href={`${APP_URL}${basePath || ""}/login`}>{t("header.signIn")}</Button>
+                <a
+                  href={`${APP_URL}${basePath || ""}/register`}
+                  className="inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-[15px] font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] bg-primary text-white hover:bg-black"
+                >
+                  {t("header.getStarted")}
+                </a>
               </div>
               <button
                 className="lg:hidden p-2 text-primary hover:bg-subtle rounded-lg transition-colors"
@@ -220,16 +234,22 @@ export default function Header() {
               transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
               className="lg:hidden border-t border-border bg-white px-5 py-4 space-y-2 overflow-hidden"
             >
-            <Link to="/for-sales-reps" className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>For Sales Reps</Link>
-            <Link to="/for-teams-leaders" className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>For Teams & Leaders</Link>
-            <Link to="/enterprise" className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>Enterprise</Link>
-            <Link to="/pricing" className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>Pricing</Link>
-            <Link to="/help" className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>Help</Link>
-            <Link to="/blog" className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>Blog</Link>
-            <Link to="/contact" className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>Contact</Link>
-            <div className="pt-4 flex gap-3">
-              <Button variant="ghost" className="flex-1">Sign in</Button>
-              <Button variant="primary" className="flex-1">Get started</Button>
+            <Link to={localizePath("/for-sales-reps")} className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>{t("header.forSalesReps")}</Link>
+            <Link to={localizePath("/for-teams-leaders")} className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>{t("header.forTeamsLeaders")}</Link>
+            <Link to={localizePath("/enterprise")} className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>{t("header.enterprise")}</Link>
+            <Link to={localizePath("/pricing")} className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>{t("header.pricing")}</Link>
+            <Link to={localizePath("/help")} className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>{t("header.help")}</Link>
+            <Link to={localizePath("/blog")} className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>{t("header.blog")}</Link>
+            <Link to={localizePath("/contact")} className="block py-2 text-[15px] font-medium text-primary" onClick={() => setMobileOpen(false)}>{t("header.contact")}</Link>
+            <div className="pt-4 flex gap-3 items-center">
+              <LanguageSelector />
+              <Button variant="ghost" className="flex-1" href={`${APP_URL}${basePath || ""}/login`}>{t("header.signIn")}</Button>
+              <a
+                href={`${APP_URL}${basePath || ""}/register`}
+                className="flex-1 inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-[15px] font-medium transition-all duration-200 bg-primary text-white hover:bg-black"
+              >
+                {t("header.getStarted")}
+              </a>
             </div>
             </motion.div>
           )}

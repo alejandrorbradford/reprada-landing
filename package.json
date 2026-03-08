@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "i18next": "^23.16.0",
+    "react-i18next": "^15.1.0",
     "cal-sans": "^1.0.1",
     "framer-motion": "^12.34.3",
     "lucide-react": "^0.575.0",

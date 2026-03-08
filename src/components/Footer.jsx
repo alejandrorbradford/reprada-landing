@@ -1,20 +1,25 @@
 import { Link } from "react-router-dom";
-
-const links = {
-  Product: [
-    { label: "Features", to: { pathname: "/", hash: "features" } },
-    { label: "Pricing", to: "/pricing" },
-  ],
-  Company: [
-    { label: "Contact", to: "/contact" },
-  ],
-  Legal: [
-    { label: "Privacy", to: "/privacy" },
-    { label: "Terms", to: "/terms" },
-  ],
-};
+import { useTranslation } from "react-i18next";
+import { useLocale } from "../contexts/LocaleContext";
 
 export default function Footer() {
+  const { t } = useTranslation();
+  const { localizePath } = useLocale();
+
+  const links = {
+    [t("footer.product")]: [
+      { label: t("footer.features"), to: localizePath("/") + "#features" },
+      { label: t("footer.pricing"), to: localizePath("/pricing") },
+    ],
+    [t("footer.company")]: [
+      { label: t("footer.contact"), to: localizePath("/contact") },
+    ],
+    [t("footer.legal")]: [
+      { label: t("footer.privacy"), to: localizePath("/privacy") },
+      { label: t("footer.terms"), to: localizePath("/terms") },
+    ],
+  };
+
   return (
     <footer id="contact" className="py-24 border-t border-border bg-white">
       <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8">
@@ -24,7 +29,7 @@ export default function Footer() {
               RepRadar
             </p>
             <p className="text-label text-secondary max-w-xs">
-              AI-powered sales call analysis. Turn every call into a coaching moment.
+              {t("footer.tagline")}
             </p>
           </div>
           {Object.entries(links).map(([title, items]) => (
@@ -48,7 +53,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-16 text-center text-label text-secondary">
-          © {new Date().getFullYear()} RepRadar. All rights reserved.
+          {t("footer.copyright", { year: new Date().getFullYear() })}
         </p>
       </div>
     </footer>

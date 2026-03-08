@@ -1,16 +1,18 @@
+import { useTranslation } from "react-i18next";
 import SectionLabel from "../components/SectionLabel";
 
 export default function Terms() {
+  const { t } = useTranslation();
   return (
     <>
       <section className="pt-24 pb-16 sm:pt-32 sm:pb-24">
         <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8 text-center">
-          <SectionLabel center>Legal</SectionLabel>
+          <SectionLabel center>{t("pages.terms.label")}</SectionLabel>
           <h1 className="font-display font-bold text-hero sm:text-[60px] text-primary tracking-tight max-w-3xl mx-auto">
-            Terms of Service
+            {t("pages.terms.title")}
           </h1>
           <p className="mt-6 text-body text-secondary max-w-2xl mx-auto">
-            Last updated: February 2025
+            {t("pages.terms.updated")}
           </p>
         </div>
       </section>
@@ -21,75 +23,52 @@ export default function Terms() {
             <div className="space-y-12 text-body text-secondary">
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  Acceptance of terms
+                  {t("pages.terms.acceptanceTitle")}
                 </h2>
-                <p>
-                  By accessing or using RepRadar, you agree to these Terms of Service. If you do not
-                  agree, do not use our service.
-                </p>
+                <p>{t("pages.terms.acceptance")}</p>
               </div>
 
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  Use of the service
+                  {t("pages.terms.useOfServiceTitle")}
                 </h2>
-                <p>
-                  You may use RepRadar for lawful purposes only. You are responsible for your
-                  account and for ensuring that your use complies with applicable laws and your
-                  organization's policies.
-                </p>
+                <p>{t("pages.terms.useOfService")}</p>
               </div>
 
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  Restrictions
+                  {t("pages.terms.restrictionsTitle")}
                 </h2>
-                <p>
-                  You may not: reverse engineer or attempt to extract our source code; use the service
-                  to harm others or violate any law; resell or redistribute the service without our
-                  permission; or use automated means to access the service beyond our API.
-                </p>
+                <p>{t("pages.terms.restrictions")}</p>
               </div>
 
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  Intellectual property
+                  {t("pages.terms.ipTitle")}
                 </h2>
-                <p>
-                  RepRadar and its content, features, and functionality are owned by us and are
-                  protected by copyright, trademark, and other laws. You retain ownership of your
-                  data; we do not claim ownership of your call transcripts or analysis results.
-                </p>
+                <p>{t("pages.terms.ip")}</p>
               </div>
 
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  Limitation of liability
+                  {t("pages.terms.liabilityTitle")}
                 </h2>
-                <p>
-                  To the maximum extent permitted by law, RepRadar is provided "as is" without
-                  warranties of any kind. We are not liable for any indirect, incidental, special,
-                  or consequential damages arising from your use of the service.
-                </p>
+                <p>{t("pages.terms.liability")}</p>
               </div>
 
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  Termination
+                  {t("pages.terms.terminationTitle")}
                 </h2>
-                <p>
-                  We may suspend or terminate your access at any time for violation of these terms.
-                  You may cancel your account at any time. Upon termination, your right to use the
-                  service ceases immediately.
-                </p>
+                <p>{t("pages.terms.termination")}</p>
               </div>
 
               <div>
                 <h2 className="font-display font-bold text-feature text-primary mb-4">
-                  Contact
+                  {t("pages.terms.contactTitle")}
                 </h2>
                 <p>
-                  For questions about these terms, contact us at{" "}
+                  {t("pages.terms.contactPrefix")}{" "}
                   <a href="mailto:legal@repradar.com" className="text-primary hover:underline">
                     legal@repradar.com
                   </a>

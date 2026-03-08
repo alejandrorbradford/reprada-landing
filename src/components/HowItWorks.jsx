@@ -1,11 +1,6 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import SectionLabel from "./SectionLabel";
-
-const steps = [
-  { num: "01", title: "Connect Google Calendar", desc: "RepRadar syncs your meetings and joins as a bot — no manual setup." },
-  { num: "02", title: "Calls get transcribed & analyzed", desc: "AI scores discovery, objections, closing, and rapport. Get key moments and improvement tips." },
-  { num: "03", title: "See insights & improve", desc: "Dashboard, leaderboard, and actionable feedback for every rep." },
-];
 
 const container = {
   hidden: { opacity: 0 },
@@ -24,7 +19,14 @@ const item = {
   },
 };
 
+const steps = [
+  { num: "01", titleKey: "howItWorks.step1Title", descKey: "howItWorks.step1Desc" },
+  { num: "02", titleKey: "howItWorks.step2Title", descKey: "howItWorks.step2Desc" },
+  { num: "03", titleKey: "howItWorks.step3Title", descKey: "howItWorks.step3Desc" },
+];
+
 export default function HowItWorks() {
+  const { t } = useTranslation();
   return (
     <section className="py-section sm:py-section-lg">
       <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8">
@@ -36,19 +38,19 @@ export default function HowItWorks() {
           className="text-center mb-16"
         >
           <motion.div variants={item}>
-            <SectionLabel center>How it works</SectionLabel>
+            <SectionLabel center>{t("howItWorks.label")}</SectionLabel>
           </motion.div>
           <motion.h2
             variants={item}
             className="font-display font-bold text-section text-primary tracking-tight"
           >
-            Effortless call analysis
+            {t("howItWorks.title")}
           </motion.h2>
           <motion.p
             variants={item}
             className="mt-4 text-body text-secondary max-w-2xl mx-auto"
           >
-            Connect once, get insights on every call. No manual work.
+            {t("howItWorks.subtitle")}
           </motion.p>
         </motion.div>
         <motion.div
@@ -58,7 +60,7 @@ export default function HowItWorks() {
           variants={container}
           className="grid gap-8 sm:grid-cols-3 sm:gap-8"
         >
-          {steps.map((step, i) => (
+          {steps.map((step) => (
             <motion.div
               key={step.num}
               variants={item}
@@ -69,9 +71,9 @@ export default function HowItWorks() {
                 {step.num}
               </span>
               <h3 className="mt-4 font-display font-semibold text-feature text-primary">
-                {step.title}
+                {t(step.titleKey)}
               </h3>
-              <p className="mt-3 text-body text-secondary">{step.desc}</p>
+              <p className="mt-3 text-body text-secondary">{t(step.descKey)}</p>
             </motion.div>
           ))}
         </motion.div>

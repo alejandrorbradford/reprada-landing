@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import SectionLabel from "./SectionLabel";
 import Button from "./Button";
 import CallReportCard from "./mockups/CallReportCard";
+import { useLocale } from "../contexts/LocaleContext";
 
 const stagger = {
   visible: {
@@ -21,7 +23,11 @@ const item = {
   },
 };
 
+const APP_URL = import.meta.env.VITE_APP_URL || "http://localhost:3000";
+
 export default function Hero() {
+  const { t } = useTranslation();
+  const { basePath } = useLocale();
   return (
     <section className="pt-24 pb-32 sm:pt-32 sm:pb-40 overflow-hidden">
       <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8 text-center">
@@ -32,30 +38,34 @@ export default function Hero() {
           className="flex flex-col items-center"
         >
           <motion.div variants={item}>
-            <SectionLabel center>AI-powered sales coaching</SectionLabel>
+            <SectionLabel center>{t("hero.label")}</SectionLabel>
           </motion.div>
           <motion.h1
             variants={item}
             className="font-display font-bold text-hero sm:text-[60px] text-primary tracking-tight max-w-3xl mx-auto"
           >
-            Turn every sales call into a coaching moment
+            {t("hero.headline")}
           </motion.h1>
           <motion.p
             variants={item}
             className="mt-6 text-body text-secondary max-w-2xl mx-auto"
           >
-            RepRadar analyzes your calls with AI — scores, talk ratio, key moments,
-            and improvement tips. Connect Google Calendar and get insights automatically.
+            {t("hero.subheadline")}
           </motion.p>
           <motion.div
             variants={item}
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button variant="primary">Get started</Button>
-            <Button variant="secondary">Sign in</Button>
+            <a
+              href={`${APP_URL}${basePath || ""}/register`}
+              className="inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-[15px] font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] bg-primary text-white hover:bg-black"
+            >
+              {t("hero.getStarted")}
+            </a>
+            <Button variant="secondary" href={`${APP_URL}${basePath || ""}/login`}>{t("hero.signIn")}</Button>
           </motion.div>
           <motion.p variants={item} className="mt-6 text-label text-secondary">
-            No credit card required
+            {t("hero.noCreditCard")}
           </motion.p>
           <motion.div
             className="mt-16"

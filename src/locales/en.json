@@ -1,0 +1,469 @@
+{
+  "hero": {
+    "label": "AI sales coach",
+    "headline": "Score your sales calls. Improve your conversions.",
+    "subheadline": "Get AI-powered scores on discovery, objections, and closing. See exactly where deals stall and how to improve. Connect Google Calendar and get insights after every call.",
+    "getStarted": "Get started",
+    "signIn": "Sign in",
+    "noCreditCard": "No credit card required"
+  },
+  "header": {
+    "announcement": "RepRadar — Your AI sales coach. Score calls, close more deals. Start free →",
+    "solutions": "Solutions",
+    "resources": "Resources",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "getStarted": "Get started",
+    "signIn": "Sign in",
+    "forSalesReps": "For Sales Reps",
+    "forSalesRepsSub": "Get scored on every call",
+    "forTeamsLeaders": "For Teams & Leaders",
+    "forTeamsLeadersSub": "Visibility on performance",
+    "enterprise": "Enterprise",
+    "enterpriseSub": "Custom deployment",
+    "help": "Help",
+    "helpSub": "FAQs and support",
+    "blog": "Blog",
+    "blogSub": "Tips and updates"
+  },
+  "footer": {
+    "tagline": "AI sales coach. Score your calls, improve your conversions.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "features": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "copyright": "© {{year}} RepRadar. All rights reserved."
+  },
+  "howItWorks": {
+    "label": "How it works",
+    "title": "AI coaching on every call",
+    "subtitle": "Connect once, get scores and coaching on every call. No manual work.",
+    "step1Title": "Connect Google Calendar",
+    "step1Desc": "RepRadar syncs your meetings and joins as a bot — no manual setup.",
+    "step2Title": "Calls get scored automatically",
+    "step2Desc": "AI scores discovery, objections, closing, and rapport. See where deals stall and get coaching tips to improve.",
+    "step3Title": "Improve and close more",
+    "step3Desc": "Dashboard, leaderboard, and actionable feedback for every rep. Track progress, coach the right moments."
+  },
+  "features": {
+    "connectCalendar": {
+      "label": "Connect Calendar",
+      "title": "Connect Google Calendar",
+      "desc": "RepRadar syncs your meetings and joins as a bot. No manual setup."
+    },
+    "aiAnalysis": {
+      "label": "AI Analysis",
+      "title": "AI call scores & coaching tips",
+      "desc": "Strict rubric for discovery, objections, closing, and rapport. See exactly where deals stall and get actionable tips to improve conversions."
+    },
+    "teams": {
+      "label": "Teams & Leaders",
+      "title": "Coach your team to close more",
+      "desc": "See who's performing well and who's lagging behind. Leaderboard, team rankings, and call history — so managers can coach the right reps at the right time."
+    },
+    "emailReports": {
+      "label": "Email Reports",
+      "title": "Get coaching after every call",
+      "desc": "Summary, key moments, and improvement tips delivered to your inbox when the call ends. No need to log in — insights come to you."
+    }
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "Don't just take our word for it",
+    "subtitle": "Sales leaders and teams trust RepRadar to coach every rep.",
+    "quote1": "We switched from Gong. RepRadar's talk ratio metric alone changed how we coach — we show reps the numbers instead of guessing.",
+    "quote2": "The key moments and improvement tips are spot-on. Our reps actually use them. Finally, AI that understands sales.",
+    "quote3": "Call reviews went from a weekly chore to a daily habit. Every rep knows exactly where to improve before their next 1:1.",
+    "name1": "Sarah Chen",
+    "name2": "Marcus Rodriguez",
+    "name3": "Emily Foster",
+    "title1": "VP Sales, B2B SaaS (40 reps)",
+    "title2": "Sales Manager, Fintech (12 reps)",
+    "title3": "Director of Sales Ops, B2B software (25 reps)"
+  },
+  "logoMarquee": {
+    "trustedBy": "Trusted by sales teams who close more deals"
+  },
+  "pricingSection": {
+    "label": "Pricing",
+    "title": "Start for free",
+    "subtitle": "Get started with RepRadar at no cost. Free for individuals and small teams. Contact us for enterprise pricing.",
+    "getStarted": "Get started",
+    "contactSales": "Contact sales"
+  },
+  "bottomCta": {
+    "label": "Get started",
+    "title": "Ready to score your calls and close more deals?",
+    "subtitle": "Start for free. No credit card required.",
+    "getStarted": "Get started",
+    "signIn": "Sign in"
+  },
+  "pages": {
+    "forSalesReps": {
+      "hero": {
+        "label": "For Sales Reps",
+        "headline": "Get scored on every call. Improve without the guesswork.",
+        "subheadline": "RepRadar analyzes your calls with AI — scores, talk ratio, key moments, and improvement tips. Connect Google Calendar and get insights automatically after every meeting. No more wondering how you did or what to work on next.",
+        "startFree": "Start for free",
+        "signIn": "Sign in",
+        "noCreditCard": "No credit card required"
+      },
+      "howItWorks": {
+        "label": "How it works",
+        "title": "Three steps to better calls",
+        "subtitle": "Set it once. Get insights on every call. No manual work.",
+        "step1Title": "Connect your calendar",
+        "step1Desc": "One-click Google Calendar sync. RepRadar joins your meetings as a bot — no manual setup, no extra steps.",
+        "step2Title": "Calls get analyzed automatically",
+        "step2Desc": "AI transcribes and scores every call. Discovery quality, objection handling, closing technique, and rapport — all measured against a consistent rubric.",
+        "step3Title": "Improve call by call",
+        "step3Desc": "See your talk ratio (40–50% is the sweet spot), key moments, and improvement tips. Track your progress over time."
+      },
+      "aiAnalysis": {
+        "label": "AI call analysis",
+        "title": "Know exactly how you performed",
+        "desc": "Every call gets a 0–100 score across discovery, objection handling, closing, and rapport. Key moments are flagged with timestamps — objection at 2:15, strong discovery question at 5:30. No more vague feedback. Just clear, actionable data."
+      },
+      "emailReports": {
+        "label": "Email reports",
+        "title": "Insights delivered to your inbox",
+        "desc": "When the call ends, your report is on its way. Summary, key moments, and improvement tips — no need to log in. Review between meetings, on your phone, whenever it works for you."
+      },
+      "builtForReps": {
+        "label": "Built for reps",
+        "title": "Everything you need to improve",
+        "scoredTitle": "Get scored on every call",
+        "scoredDesc": "AI analyzes discovery, objections, closing, and rapport using a strict rubric. Know exactly how you performed — no guesswork, no waiting for manager feedback.",
+        "tipsTitle": "Actionable improvement tips",
+        "tipsDesc": "Get specific suggestions tailored to your performance. Not generic advice — insights like 'Ask one more discovery question before presenting' so you know exactly what to do next.",
+        "reportsTitle": "Reports in your inbox",
+        "reportsDesc": "Summary, key moments, and tips delivered after every call. No need to log in — insights come to you. Review on the go between meetings."
+      },
+      "talkRatio": {
+        "title": "The 40–50% talk ratio sweet spot",
+        "desc": "RepRadar tracks how much you talk vs. the prospect. The best discovery calls land in the 40–50% range — enough to guide the conversation, not dominate it. Get real-time feedback so you can adjust."
+      },
+      "cta": {
+        "title": "Ready to improve every call?",
+        "subtitle": "Start for free. Connect your calendar and get your first analysis within minutes.",
+        "startFree": "Start for free",
+        "signIn": "Sign in"
+      }
+    },
+    "forTeamsLeaders": {
+      "hero": {
+        "label": "For Teams & Leaders",
+        "headline": "Visibility on your sales team. Coach smarter, not harder.",
+        "subheadline": "See who's performing well and who's lagging behind. RepRadar gives managers the insights to coach the right reps at the right time — without listening to every call. Leaderboard, team rankings, and call history so you know exactly where to focus.",
+        "getStarted": "Get started",
+        "contactUs": "Contact us"
+      },
+      "withoutRepRadar": {
+        "title": "Without RepRadar",
+        "bullet1": "You spot-check a few calls, miss the rest",
+        "bullet2": "1:1s are reactive — you find out about issues too late",
+        "bullet3": "Hard to know who needs help and with what",
+        "bullet4": "Coaching feels like guesswork"
+      },
+      "withRepRadar": {
+        "title": "With RepRadar",
+        "bullet1": "Every call analyzed — no gaps in visibility",
+        "bullet2": "See who's struggling before the 1:1",
+        "bullet3": "Know exactly what to coach on — objection handling, discovery, closing",
+        "bullet4": "Data-driven coaching that scales"
+      },
+      "builtForManagers": {
+        "label": "Built for managers",
+        "title": "Everything you need to lead your team",
+        "value1Title": "See who's ahead and who's behind",
+        "value1Desc": "Team leaderboard with average scores per rep. Spot top performers and identify who needs coaching — at a glance, without listening to every call.",
+        "value2Title": "Coach the right reps at the right time",
+        "value2Desc": "Actionable insights tell you exactly what to discuss. 'Marcus needs work on objection handling' — so you know which 1:1 to prioritize and what to cover.",
+        "value3Title": "Team-wide trends and patterns",
+        "value3Desc": "Understand common objections across your team, which discovery questions work best, and where reps consistently struggle. Data-driven coaching, not gut feel."
+      },
+      "whatYouGet": {
+        "label": "What you get",
+        "title": "Full visibility. Zero guesswork.",
+        "desc": "RepRadar gives you the data to coach effectively. See every rep's performance, understand trends, and have the right conversations at the right time.",
+        "cap1": "Team leaderboard with average call scores",
+        "cap2": "Per-rep call history and score trends",
+        "cap3": "Identify reps who need coaching — and why",
+        "cap4": "Skip the 1:1 prep — see exactly what to discuss",
+        "cap5": "Track improvement over time",
+        "cap6": "No more spot-checking calls — AI does the work"
+      },
+      "skip1on1": {
+        "title": "Skip the 1:1 prep",
+        "desc": "Walk into every 1:1 knowing exactly what to discuss. RepRadar surfaces the improvement tips for each rep — so you can have targeted, actionable conversations instead of generic check-ins.",
+        "allCallsAnalyzed": "of calls analyzed",
+        "noSpotChecking": "No spot-checking. No gaps."
+      },
+      "cta": {
+        "title": "Ready to see your team's performance?",
+        "subtitle": "Get in touch for a demo or start free with your team.",
+        "getStarted": "Get started",
+        "contactUs": "Contact us"
+      }
+    },
+    "enterprise": {
+      "hero": {
+        "label": "Enterprise",
+        "headline": "RepRadar built for your organization",
+        "subheadline": "Custom deployment, SSO, security, and dedicated support. RepRadar scales with your sales organization — whether you're 50 reps or 500. We meet your compliance requirements and integrate with your stack.",
+        "contactSales": "Contact sales",
+        "requestDemo": "Request a demo",
+        "checklist1": "Custom deployment",
+        "checklist2": "SSO / SAML",
+        "checklist3": "SOC 2",
+        "checklist4": "Dedicated support"
+      },
+      "standardLimits": {
+        "title": "Standard SaaS limits",
+        "bullet1": "Data must live in shared cloud — compliance says no",
+        "bullet2": "No SSO — reps juggle another login",
+        "bullet3": "Generic support — no one knows your org",
+        "bullet4": "One-size-fits-all — doesn't fit your workflow"
+      },
+      "repRadarEnterprise": {
+        "title": "RepRadar Enterprise",
+        "bullet1": "Deploy in your environment — your data, your rules",
+        "bullet2": "SSO with SAML, Okta, Azure AD — one login",
+        "bullet3": "Dedicated success manager — we know your team",
+        "bullet4": "Custom integrations — fits your stack"
+      },
+      "builtForScale": {
+        "label": "Built for scale",
+        "title": "Everything enterprise teams need",
+        "value1Title": "Custom deployment",
+        "value1Desc": "Run RepRadar in your environment — on-premise, private cloud, or hybrid. We deploy to your specs, integrate with your stack, and meet your data residency requirements.",
+        "value2Title": "SSO & enterprise security",
+        "value2Desc": "Single sign-on with SAML, Okta, Azure AD. SOC 2 compliance, encryption at rest and in transit. Your call data stays in your control.",
+        "value3Title": "Dedicated support",
+        "value3Desc": "SLA-backed support, dedicated success manager, and custom integrations. We're with you from rollout through scale."
+      },
+      "whatsIncluded": {
+        "label": "What's included",
+        "title": "Full enterprise feature set",
+        "desc": "Enterprise plans include everything in Teams, plus deployment flexibility, security controls, and white-glove support.",
+        "cap1": "On-premise or private cloud deployment",
+        "cap2": "SAML / Okta / Azure AD SSO",
+        "cap3": "SOC 2 compliant infrastructure",
+        "cap4": "Custom data retention policies",
+        "cap5": "Dedicated success manager",
+        "cap6": "Priority support with SLA",
+        "cap7": "Custom integrations (CRM, LMS, etc.)",
+        "cap8": "Volume pricing for large teams",
+        "deploymentLabel": "Deployment options",
+        "deploy1": "On-premise",
+        "deploy2": "Private cloud (AWS, GCP, Azure)",
+        "deploy3": "Hybrid",
+        "deploy4": "Your data residency requirements"
+      },
+      "securityCompliance": {
+        "title": "Security & compliance",
+        "desc": "Your call data is sensitive. We treat it that way. SOC 2 Type II compliant infrastructure, encryption everywhere, and controls that meet the bar for regulated industries.",
+        "compliance1": "SOC 2 Type II",
+        "compliance2": "Encryption at rest & in transit",
+        "compliance3": "Role-based access control",
+        "compliance4": "Audit logs"
+      },
+      "cta": {
+        "title": "Ready for enterprise?",
+        "subtitle": "Get in touch for custom pricing, a demo, or deployment options.",
+        "contactSales": "Contact sales",
+        "requestDemo": "Request a demo"
+      }
+    },
+    "pricingPage": {
+      "hero": {
+        "label": "Pricing",
+        "title": "Simple, transparent pricing",
+        "subtitle": "Start with one free call. No credit card required. Upgrade when you're ready to improve every call."
+      },
+      "freeTrial": {
+        "title": "Try RepRadar free",
+        "desc1": "1 call, up to 45 minutes. See your score, key moments, and improvement tips.",
+        "desc2": "No credit card required. Upgrade to continue.",
+        "cta": "Start free trial"
+      },
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "period": "per seat / month",
+          "desc": "For individual reps getting started",
+          "callsLabel": "calls per seat",
+          "maxDuration": "1.5 hours",
+          "overage": "$4.00/call",
+          "cta": "Start free trial",
+          "mostPopular": "Most popular",
+          "feature1": "AI call scores & improvement tips",
+          "feature2": "Talk ratio & key moments",
+          "feature3": "Email reports after every call",
+          "feature4": "Google Calendar sync",
+          "feature5": "Call history & dashboard"
+        },
+        "pro": {
+          "name": "Pro",
+          "period": "per seat / month",
+          "desc": "For reps who want to improve faster",
+          "callsLabel": "calls per seat",
+          "maxDuration": "1.5 hours",
+          "overage": "$3.00/call",
+          "cta": "Start free trial",
+          "mostPopular": "Most popular",
+          "feature1": "Everything in Starter",
+          "feature2": "45 calls per month",
+          "feature3": "Priority analysis",
+          "feature4": "Export & integrations",
+          "feature5": "Dedicated support"
+        },
+        "teams": {
+          "name": "Teams",
+          "period": "per month",
+          "desc": "For teams of up to 5 reps",
+          "callsLabel": "calls shared",
+          "seats": "5 seats included",
+          "maxDuration": "1.5 hours",
+          "overage": "$2.50/call",
+          "extraSeat": "+$35/seat",
+          "cta": "Start free trial",
+          "mostPopular": "Most popular",
+          "feature1": "Everything in Pro",
+          "feature2": "100 calls shared across team",
+          "feature3": "Team leaderboard",
+          "feature4": "Manager dashboard",
+          "feature5": "Admin controls",
+          "feature6": "Extra seats: +$35/seat"
+        }
+      },
+      "limitsBilling": {
+        "label": "How it works",
+        "title": "Limits & billing",
+        "callDurationTitle": "Call duration",
+        "callDurationDesc": "Maximum 1.5 hours per call. The bot automatically leaves at 1.5 hours to keep costs predictable. Most discovery calls are 30–45 minutes.",
+        "overageTitle": "Overage",
+        "overageDesc": "Need more calls? Overage is billed per call at the rate shown for each plan. No surprise fees. Usage is tracked in your dashboard."
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "desc": "Custom deployment, SSO, security, and dedicated support for larger organizations. Volume pricing available.",
+        "contactSales": "Contact sales"
+      },
+      "cta": {
+        "title": "Ready to improve every call?",
+        "subtitle": "Start with one free call. No credit card required.",
+        "startFreeTrial": "Start free trial"
+      }
+    },
+    "contact": {
+      "label": "Contact",
+      "title": "Get in touch",
+      "subtitle": "Have a question or want to learn more? We'd love to hear from you.",
+      "sendMessage": "Send us a message",
+      "formDesc": "Fill out the form and we'll get back to you within 24 hours.",
+      "thanks": "Thanks for reaching out!",
+      "thanksDesc": "We'll get back to you within 24 hours.",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "you@company.com",
+      "messagePlaceholder": "How can we help?",
+      "submit": "Send message"
+    },
+    "help": {
+      "label": "Help",
+      "title": "How can we help?",
+      "subtitle": "Find answers to common questions or get in touch with our support team.",
+      "searchPlaceholder": "Search...",
+      "faqTitle": "Frequently asked questions",
+      "stillNeedHelp": "Still need help?",
+      "supportDesc": "Our support team is here for you. Reach out and we'll get back within 24 hours.",
+      "contactSupport": "Contact support",
+      "faq1q": "How do I connect my calendar?",
+      "faq1a": "Go to Settings and connect your Google Calendar. RepRadar will sync your meetings and automatically join as a bot when calls start. No manual setup required.",
+      "faq2q": "What data do you store?",
+      "faq2a": "We store transcripts and analysis results to power your dashboard and reports. You can delete your data at any time from Settings. We never share your data with third parties.",
+      "faq3q": "How does the AI scoring work?",
+      "faq3a": "Our AI uses a strict rubric to score discovery, objection handling, closing, and rapport. Each dimension is scored 1–5 with specific feedback on what went well and what to improve.",
+      "faq4q": "Can I use RepRadar with Zoom and Google Meet?",
+      "faq4a": "Yes. RepRadar works with both Zoom and Google Meet. When you connect your calendar, we detect the meeting type and join accordingly.",
+      "faq5q": "Is there a free tier?",
+      "faq5a": "Yes. RepRadar is free for individuals and small teams. Contact us for enterprise pricing and custom deployment options."
+    },
+    "privacy": {
+      "label": "Legal",
+      "title": "Privacy Policy",
+      "updated": "Last updated: February 2025",
+      "infoWeCollectTitle": "Information we collect",
+      "infoWeCollect": "We collect information you provide directly (name, email, company) when you sign up, contact us, or use our services. We also collect call transcripts and meeting data when you connect your calendar and use RepRadar to analyze calls.",
+      "howWeUseTitle": "How we use your information",
+      "howWeUse": "We use your information to provide, maintain, and improve RepRadar; to generate AI-powered call analysis and insights; to communicate with you; and to comply with legal obligations. We do not sell your personal information.",
+      "cookiesTitle": "Cookies and tracking",
+      "cookies": "We use cookies and similar technologies to operate our service, remember your preferences, and understand how you use RepRadar. You can control cookies through your browser settings.",
+      "thirdPartiesTitle": "Third parties",
+      "thirdParties": "We work with service providers (e.g., hosting, analytics, AI) to operate RepRadar. These providers are contractually bound to protect your data. We may share information when required by law or to protect our rights.",
+      "dataRetentionTitle": "Data retention and deletion",
+      "dataRetention": "You can delete your data at any time from Settings. We retain data as needed to provide our services and as required by law. Deleted data is removed from our systems within 30 days.",
+      "contactUsTitle": "Contact us",
+      "contactUsPrefix": "For privacy-related questions, contact us at"
+    },
+    "terms": {
+      "label": "Legal",
+      "title": "Terms of Service",
+      "updated": "Last updated: February 2025",
+      "acceptanceTitle": "Acceptance of terms",
+      "acceptance": "By accessing or using RepRadar, you agree to these Terms of Service. If you do not agree, do not use our service.",
+      "useOfServiceTitle": "Use of the service",
+      "useOfService": "You may use RepRadar for lawful purposes only. You are responsible for your account and for ensuring that your use complies with applicable laws and your organization's policies.",
+      "restrictionsTitle": "Restrictions",
+      "restrictions": "You may not: reverse engineer or attempt to extract our source code; use the service to harm others or violate any law; resell or redistribute the service without our permission; or use automated means to access the service beyond our API.",
+      "ipTitle": "Intellectual property",
+      "ip": "RepRadar and its content, features, and functionality are owned by us and are protected by copyright, trademark, and other laws. You retain ownership of your data; we do not claim ownership of your call transcripts or analysis results.",
+      "liabilityTitle": "Limitation of liability",
+      "liability": "To the maximum extent permitted by law, RepRadar is provided \"as is\" without warranties of any kind. We are not liable for any indirect, incidental, special, or consequential damages arising from your use of the service.",
+      "terminationTitle": "Termination",
+      "termination": "We may suspend or terminate your access at any time for violation of these terms. You may cancel your account at any time. Upon termination, your right to use the service ceases immediately.",
+      "contactTitle": "Contact",
+      "contactPrefix": "For questions about these terms, contact us at"
+    },
+    "blog": {
+      "label": "Blog",
+      "title": "Tips and updates",
+      "subtitle": "Sales coaching insights, product updates, and best practices from the RepRadar team.",
+      "comingSoon": "Coming soon",
+      "posts": {
+        "5-ways-to-improve-discovery-calls": {
+          "title": "5 ways to improve your discovery calls",
+          "excerpt": "Discovery is where deals are won or lost. Here's how to ask better questions and uncover real pain.",
+          "date": "Feb 20, 2025"
+        },
+        "ai-coaching-for-sales-teams": {
+          "title": "Why AI coaching is the future of sales enablement",
+          "excerpt": "Traditional coaching doesn't scale. AI-powered feedback gives every rep the insights they need.",
+          "date": "Feb 12, 2025"
+        },
+        "objection-handling-rubric": {
+          "title": "Building a better objection-handling rubric",
+          "excerpt": "How we designed our AI scoring for objection handling — and what we learned from 10,000+ calls.",
+          "date": "Feb 5, 2025"
+        },
+        "talk-ratio-matters": {
+          "title": "Talk ratio matters more than you think",
+          "excerpt": "The ideal rep-to-prospect talk ratio, and how to improve yours without sounding robotic.",
+          "date": "Jan 28, 2025"
+        },
+        "getting-started-repradar": {
+          "title": "Getting started with RepRadar",
+          "excerpt": "A step-by-step guide to connecting your calendar and getting your first AI call analysis.",
+          "date": "Jan 15, 2025"
+        }
+      }
+    }
+  }
+}

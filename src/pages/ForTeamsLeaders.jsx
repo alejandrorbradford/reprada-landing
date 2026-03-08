@@ -1,36 +1,20 @@
+import { useTranslation } from "react-i18next";
 import { Crown, BarChart3, Users, Target, MessageSquare } from "lucide-react";
 import SectionLabel from "../components/SectionLabel";
 import Button from "../components/Button";
 import LeaderboardPreview from "../components/mockups/LeaderboardPreview";
+import { useLocale } from "../contexts/LocaleContext";
 
-const valueProps = [
-  {
-    icon: BarChart3,
-    title: "See who's ahead and who's behind",
-    desc: "Team leaderboard with average scores per rep. Spot top performers and identify who needs coaching — at a glance, without listening to every call.",
-  },
-  {
-    icon: Crown,
-    title: "Coach the right reps at the right time",
-    desc: "Actionable insights tell you exactly what to discuss. 'Marcus needs work on objection handling' — so you know which 1:1 to prioritize and what to cover.",
-  },
-  {
-    icon: Users,
-    title: "Team-wide trends and patterns",
-    desc: "Understand common objections across your team, which discovery questions work best, and where reps consistently struggle. Data-driven coaching, not gut feel.",
-  },
-];
+const APP_URL = import.meta.env.VITE_APP_URL || "http://localhost:3000";
 
-const capabilities = [
-  "Team leaderboard with average call scores",
-  "Per-rep call history and score trends",
-  "Identify reps who need coaching — and why",
-  "Skip the 1:1 prep — see exactly what to discuss",
-  "Track improvement over time",
-  "No more spot-checking calls — AI does the work",
-];
+const valuePropIcons = [BarChart3, Crown, Users];
 
 export default function ForTeamsLeaders() {
+  const { t } = useTranslation();
+  const { basePath, localizePath } = useLocale();
+  const contactHref = localizePath("/contact");
+  const appRegisterHref = `${APP_URL}${basePath || ""}/register`;
+
   return (
     <>
       {/* Hero */}
@@ -38,18 +22,20 @@ export default function ForTeamsLeaders() {
         <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <SectionLabel>For Teams & Leaders</SectionLabel>
+              <SectionLabel>{t("pages.forTeamsLeaders.hero.label")}</SectionLabel>
               <h1 className="font-display font-bold text-hero sm:text-[60px] text-primary tracking-tight">
-                Visibility on your sales team. Coach smarter, not harder.
+                {t("pages.forTeamsLeaders.hero.headline")}
               </h1>
               <p className="mt-6 text-body text-secondary max-w-lg">
-                See who's performing well and who's lagging behind. RepRadar gives managers the insights to
-                coach the right reps at the right time — without listening to every call. Leaderboard, team
-                rankings, and call history so you know exactly where to focus.
+                {t("pages.forTeamsLeaders.hero.subheadline")}
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                <Button variant="primary">Get started</Button>
-                <Button variant="secondary" href="/contact">Contact us</Button>
+                <Button variant="primary" href={appRegisterHref}>
+                  {t("pages.forTeamsLeaders.hero.getStarted")}
+                </Button>
+                <Button variant="secondary" href={contactHref}>
+                  {t("pages.forTeamsLeaders.hero.contactUs")}
+                </Button>
               </div>
             </div>
             <div className="flex justify-center lg:justify-end">
@@ -67,48 +53,28 @@ export default function ForTeamsLeaders() {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h2 className="font-display font-bold text-feature text-primary tracking-tight">
-                Without RepRadar
+                {t("pages.forTeamsLeaders.withoutRepRadar.title")}
               </h2>
               <ul className="mt-4 space-y-3 text-body text-secondary">
-                <li className="flex gap-2">
-                  <span className="text-primary">—</span>
-                  You spot-check a few calls, miss the rest
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-primary">—</span>
-                  1:1s are reactive — you find out about issues too late
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-primary">—</span>
-                  Hard to know who needs help and with what
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-primary">—</span>
-                  Coaching feels like guesswork
-                </li>
+                {[1, 2, 3, 4].map((i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="text-primary">—</span>
+                    {t(`pages.forTeamsLeaders.withoutRepRadar.bullet${i}`)}
+                  </li>
+                ))}
               </ul>
             </div>
             <div>
               <h2 className="font-display font-bold text-feature text-primary tracking-tight">
-                With RepRadar
+                {t("pages.forTeamsLeaders.withRepRadar.title")}
               </h2>
               <ul className="mt-4 space-y-3 text-body text-secondary">
-                <li className="flex gap-2">
-                  <span className="text-primary">—</span>
-                  Every call analyzed — no gaps in visibility
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-primary">—</span>
-                  See who's struggling before the 1:1
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-primary">—</span>
-                  Know exactly what to coach on — objection handling, discovery, closing
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-primary">—</span>
-                  Data-driven coaching that scales
-                </li>
+                {[1, 2, 3, 4].map((i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="text-primary">—</span>
+                    {t(`pages.forTeamsLeaders.withRepRadar.bullet${i}`)}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -119,23 +85,27 @@ export default function ForTeamsLeaders() {
       <section className="py-section sm:py-section-lg">
         <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <SectionLabel center>Built for managers</SectionLabel>
+            <SectionLabel center>
+              {t("pages.forTeamsLeaders.builtForManagers.label")}
+            </SectionLabel>
             <h2 className="font-display font-bold text-section text-primary tracking-tight">
-              Everything you need to lead your team
+              {t("pages.forTeamsLeaders.builtForManagers.title")}
             </h2>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
-            {valueProps.map((item) => {
-              const Icon = item.icon;
+            {[1, 2, 3].map((i) => {
+              const Icon = valuePropIcons[i - 1];
               return (
-                <div key={item.title} className="bg-subtle border border-border rounded-xl p-6">
+                <div key={i} className="bg-subtle border border-border rounded-xl p-6">
                   <div className="w-12 h-12 rounded-xl bg-white border border-border flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
                   </div>
                   <h3 className="font-display font-semibold text-feature text-primary">
-                    {item.title}
+                    {t(`pages.forTeamsLeaders.builtForManagers.value${i}Title`)}
                   </h3>
-                  <p className="mt-3 text-body text-secondary">{item.desc}</p>
+                  <p className="mt-3 text-body text-secondary">
+                    {t(`pages.forTeamsLeaders.builtForManagers.value${i}Desc`)}
+                  </p>
                 </div>
               );
             })}
@@ -148,19 +118,20 @@ export default function ForTeamsLeaders() {
         <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <SectionLabel>What you get</SectionLabel>
+              <SectionLabel>{t("pages.forTeamsLeaders.whatYouGet.label")}</SectionLabel>
               <h2 className="font-display font-bold text-section text-primary tracking-tight">
-                Full visibility. Zero guesswork.
+                {t("pages.forTeamsLeaders.whatYouGet.title")}
               </h2>
               <p className="mt-4 text-body text-secondary max-w-lg">
-                RepRadar gives you the data to coach effectively. See every rep's performance, understand
-                trends, and have the right conversations at the right time.
+                {t("pages.forTeamsLeaders.whatYouGet.desc")}
               </p>
               <ul className="mt-8 space-y-4">
-                {capabilities.map((cap) => (
-                  <li key={cap} className="flex gap-3">
+                {[1, 2, 3, 4, 5, 6].map((i) => (
+                  <li key={i} className="flex gap-3">
                     <Target className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" strokeWidth={2} />
-                    <span className="text-body text-primary">{cap}</span>
+                    <span className="text-body text-primary">
+                      {t(`pages.forTeamsLeaders.whatYouGet.cap${i}`)}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -182,18 +153,21 @@ export default function ForTeamsLeaders() {
               <div>
                 <MessageSquare className="w-10 h-10 mb-4 opacity-80" strokeWidth={1.5} />
                 <h2 className="font-display font-bold text-section tracking-tight">
-                  Skip the 1:1 prep
+                  {t("pages.forTeamsLeaders.skip1on1.title")}
                 </h2>
                 <p className="mt-4 text-body opacity-90">
-                  Walk into every 1:1 knowing exactly what to discuss. RepRadar surfaces the improvement tips
-                  for each rep — so you can have targeted, actionable conversations instead of generic check-ins.
+                  {t("pages.forTeamsLeaders.skip1on1.desc")}
                 </p>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-center">
                   <span className="font-display font-bold text-6xl">100%</span>
-                  <p className="mt-2 text-body opacity-90">of calls analyzed</p>
-                  <p className="text-label opacity-75">No spot-checking. No gaps.</p>
+                  <p className="mt-2 text-body opacity-90">
+                    {t("pages.forTeamsLeaders.skip1on1.allCallsAnalyzed")}
+                  </p>
+                  <p className="text-label opacity-75">
+                    {t("pages.forTeamsLeaders.skip1on1.noSpotChecking")}
+                  </p>
                 </div>
               </div>
             </div>
@@ -205,14 +179,18 @@ export default function ForTeamsLeaders() {
       <section className="py-section sm:py-section-lg">
         <div className="max-w-content mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display font-bold text-section text-primary tracking-tight">
-            Ready to see your team's performance?
+            {t("pages.forTeamsLeaders.cta.title")}
           </h2>
           <p className="mt-4 text-body text-secondary max-w-xl mx-auto">
-            Get in touch for a demo or start free with your team.
+            {t("pages.forTeamsLeaders.cta.subtitle")}
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="primary">Get started</Button>
-            <Button variant="secondary" href="/contact">Contact us</Button>
+            <Button variant="primary" href={appRegisterHref}>
+              {t("pages.forTeamsLeaders.cta.getStarted")}
+            </Button>
+            <Button variant="secondary" href={contactHref}>
+              {t("pages.forTeamsLeaders.cta.contactUs")}
+            </Button>
           </div>
         </div>
       </section>

@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const logos = ["Ridgepoint", "Northgate", "Meridian", "Vantage", "Clearview", "Strata"];
 
 export default function LogoMarquee() {
+  const { t } = useTranslation();
   return (
     <section className="py-16 bg-[#0A0A0A] overflow-hidden relative">
       {/* Gradient fade edges */}
@@ -16,7 +18,7 @@ export default function LogoMarquee() {
           transition={{ duration: 0.5 }}
           className="text-center text-label text-gray-400"
         >
-          Trusted by sales teams who close more deals
+          {t("logoMarquee.trustedBy")}
         </motion.p>
       </div>
       <div className="flex animate-marquee gap-16 whitespace-nowrap">

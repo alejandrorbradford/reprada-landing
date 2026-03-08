@@ -1,0 +1,469 @@
+{
+  "hero": {
+    "label": "Coach de ventas con IA",
+    "headline": "Puntúa tus llamadas de ventas. Mejora tus conversiones.",
+    "subheadline": "Obtén puntuaciones con IA en descubrimiento, objeciones y cierre. Descubre exactamente dónde se estancan los deals y cómo mejorar. Conecta Google Calendar y recibe insights después de cada llamada.",
+    "getStarted": "Empezar",
+    "signIn": "Iniciar sesión",
+    "noCreditCard": "Sin tarjeta de crédito"
+  },
+  "header": {
+    "announcement": "RepRadar — Tu coach de ventas con IA. Puntúa llamadas, cierra más deals. Empieza gratis →",
+    "solutions": "Soluciones",
+    "resources": "Recursos",
+    "pricing": "Precios",
+    "contact": "Contacto",
+    "getStarted": "Empezar",
+    "signIn": "Iniciar sesión",
+    "forSalesReps": "Para vendedores",
+    "forSalesRepsSub": "Puntuación en cada llamada",
+    "forTeamsLeaders": "Para equipos y líderes",
+    "forTeamsLeadersSub": "Visibilidad del rendimiento",
+    "enterprise": "Enterprise",
+    "enterpriseSub": "Implementación a medida",
+    "help": "Ayuda",
+    "helpSub": "Preguntas y soporte",
+    "blog": "Blog",
+    "blogSub": "Consejos y novedades"
+  },
+  "footer": {
+    "tagline": "Coach de ventas con IA. Puntúa tus llamadas, mejora tus conversiones.",
+    "product": "Producto",
+    "company": "Empresa",
+    "legal": "Legal",
+    "features": "Funciones",
+    "pricing": "Precios",
+    "contact": "Contacto",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "copyright": "© {{year}} RepRadar. Todos los derechos reservados."
+  },
+  "howItWorks": {
+    "label": "Cómo funciona",
+    "title": "Coaching con IA en cada llamada",
+    "subtitle": "Conecta una vez, obtén puntuaciones y coaching en cada llamada. Sin trabajo manual.",
+    "step1Title": "Conecta Google Calendar",
+    "step1Desc": "RepRadar sincroniza tus reuniones y se une como bot — sin configuración manual.",
+    "step2Title": "Las llamadas se puntúan automáticamente",
+    "step2Desc": "La IA puntúa descubrimiento, objeciones, cierre y rapport. Ve dónde se estancan los deals y recibe consejos para mejorar.",
+    "step3Title": "Mejora y cierra más",
+    "step3Desc": "Dashboard, ranking y feedback accionable para cada vendedor. Mide el progreso y entrena en el momento adecuado."
+  },
+  "features": {
+    "connectCalendar": {
+      "label": "Conectar calendario",
+      "title": "Conecta Google Calendar",
+      "desc": "RepRadar sincroniza tus reuniones y se une como bot. Sin configuración manual."
+    },
+    "aiAnalysis": {
+      "label": "Análisis IA",
+      "title": "Puntuaciones de llamadas y consejos de coaching",
+      "desc": "Rúbrica estricta para descubrimiento, objeciones, cierre y rapport. Ve exactamente dónde se estancan los deals y obtén consejos para mejorar conversiones."
+    },
+    "teams": {
+      "label": "Equipos y líderes",
+      "title": "Entrena a tu equipo para cerrar más",
+      "desc": "Ve quién rinde bien y quién se queda atrás. Ranking, historial de llamadas — para que los managers entrenen a los vendedores correctos en el momento adecuado."
+    },
+    "emailReports": {
+      "label": "Informes por email",
+      "title": "Recibe coaching después de cada llamada",
+      "desc": "Resumen, momentos clave y consejos en tu bandeja cuando termina la llamada. No hace falta iniciar sesión — los insights te llegan a ti."
+    }
+  },
+  "testimonials": {
+    "label": "Testimonios",
+    "title": "No te fíes solo de nuestra palabra",
+    "subtitle": "Líderes y equipos de ventas confían en RepRadar para entrenar a cada vendedor.",
+    "quote1": "Cambiamos de Gong. Solo la métrica de ratio de palabra de RepRadar cambió cómo entrenamos — mostramos los números en vez de adivinar.",
+    "quote2": "Los momentos clave y consejos de mejora son perfectos. Nuestros vendedores los usan de verdad. Por fin, IA que entiende ventas.",
+    "quote3": "Las revisiones de llamadas pasaron de tarea semanal a hábito diario. Cada vendedor sabe exactamente qué mejorar antes del próximo 1:1.",
+    "name1": "Sarah Chen",
+    "name2": "Marcus Rodríguez",
+    "name3": "Emily Foster",
+    "title1": "VP Ventas, B2B SaaS (40 vendedores)",
+    "title2": "Sales Manager, Fintech (12 vendedores)",
+    "title3": "Directora Sales Ops, software B2B (25 vendedores)"
+  },
+  "logoMarquee": {
+    "trustedBy": "Confiado por equipos de ventas que cierran más deals"
+  },
+  "pricingSection": {
+    "label": "Precios",
+    "title": "Empieza gratis",
+    "subtitle": "Empieza con RepRadar sin coste. Gratis para individuos y equipos pequeños. Contáctanos para precios enterprise.",
+    "getStarted": "Empezar",
+    "contactSales": "Contactar ventas"
+  },
+  "bottomCta": {
+    "label": "Empezar",
+    "title": "¿Listo para puntuar tus llamadas y cerrar más deals?",
+    "subtitle": "Empieza gratis. Sin tarjeta de crédito.",
+    "getStarted": "Empezar",
+    "signIn": "Iniciar sesión"
+  },
+  "pages": {
+    "forSalesReps": {
+      "hero": {
+        "label": "Para vendedores",
+        "headline": "Puntuación en cada llamada. Mejora sin adivinar.",
+        "subheadline": "RepRadar analiza tus llamadas con IA — puntuaciones, ratio de palabra, momentos clave y consejos de mejora. Conecta Google Calendar y recibe insights automáticamente después de cada reunión. Sin más dudas sobre cómo lo hiciste o en qué mejorar.",
+        "startFree": "Empieza gratis",
+        "signIn": "Iniciar sesión",
+        "noCreditCard": "Sin tarjeta de crédito"
+      },
+      "howItWorks": {
+        "label": "Cómo funciona",
+        "title": "Tres pasos para mejores llamadas",
+        "subtitle": "Configúralo una vez. Recibe insights en cada llamada. Sin trabajo manual.",
+        "step1Title": "Conecta tu calendario",
+        "step1Desc": "Sincronización con un clic. RepRadar se une a tus reuniones como bot — sin configuración manual.",
+        "step2Title": "Las llamadas se analizan automáticamente",
+        "step2Desc": "La IA transcribe y puntúa cada llamada. Descubrimiento, objeciones, cierre y rapport — todo medido con una rúbrica consistente.",
+        "step3Title": "Mejora llamada a llamada",
+        "step3Desc": "Ve tu ratio de palabra (40–50% es lo ideal), momentos clave y consejos. Mide tu progreso con el tiempo."
+      },
+      "aiAnalysis": {
+        "label": "Análisis de llamadas con IA",
+        "title": "Sabe exactamente cómo lo hiciste",
+        "desc": "Cada llamada obtiene una puntuación 0–100 en descubrimiento, objeciones, cierre y rapport. Los momentos clave se marcan con timestamps. Sin feedback vago. Solo datos claros y accionables."
+      },
+      "emailReports": {
+        "label": "Informes por email",
+        "title": "Insights en tu bandeja",
+        "desc": "Cuando termina la llamada, tu informe está en camino. Resumen, momentos clave y consejos — sin iniciar sesión. Revisa entre reuniones, en tu móvil, cuando te venga bien."
+      },
+      "builtForReps": {
+        "label": "Hecho para vendedores",
+        "title": "Todo lo que necesitas para mejorar",
+        "scoredTitle": "Puntuación en cada llamada",
+        "scoredDesc": "La IA analiza descubrimiento, objeciones, cierre y rapport con una rúbrica estricta. Sabe exactamente cómo lo hiciste — sin adivinar ni esperar feedback del manager.",
+        "tipsTitle": "Consejos de mejora accionables",
+        "tipsDesc": "Sugerencias específicas adaptadas a tu rendimiento. No consejos genéricos — insights como 'Haz una pregunta más de descubrimiento antes de presentar'.",
+        "reportsTitle": "Informes en tu bandeja",
+        "reportsDesc": "Resumen, momentos clave y consejos después de cada llamada. No hace falta iniciar sesión — los insights te llegan. Revisa sobre la marcha."
+      },
+      "talkRatio": {
+        "title": "El punto óptimo de ratio 40–50%",
+        "desc": "RepRadar mide cuánto hablas vs. el prospecto. Las mejores llamadas de descubrimiento están en el rango 40–50% — suficiente para guiar la conversación sin dominarla. Feedback en tiempo real."
+      },
+      "cta": {
+        "title": "¿Listo para mejorar cada llamada?",
+        "subtitle": "Empieza gratis. Conecta tu calendario y obtén tu primer análisis en minutos.",
+        "startFree": "Empieza gratis",
+        "signIn": "Iniciar sesión"
+      }
+    },
+    "forTeamsLeaders": {
+      "hero": {
+        "label": "Para equipos y líderes",
+        "headline": "Visibilidad de tu equipo de ventas. Entrena más inteligente, no más duro.",
+        "subheadline": "Ve quién rinde bien y quién se queda atrás. RepRadar da a los managers los insights para entrenar a los vendedores correctos en el momento adecuado — sin escuchar cada llamada. Ranking, posiciones de equipo e historial de llamadas para saber exactamente dónde enfocarte.",
+        "getStarted": "Empezar",
+        "contactUs": "Contáctanos"
+      },
+      "withoutRepRadar": {
+        "title": "Sin RepRadar",
+        "bullet1": "Revisas algunas llamadas por muestreo, te pierdes el resto",
+        "bullet2": "Los 1:1 son reactivos — te enteras de los problemas demasiado tarde",
+        "bullet3": "Difícil saber quién necesita ayuda y con qué",
+        "bullet4": "El coaching parece adivinar"
+      },
+      "withRepRadar": {
+        "title": "Con RepRadar",
+        "bullet1": "Cada llamada analizada — sin lagunas de visibilidad",
+        "bullet2": "Ve quién tiene problemas antes del 1:1",
+        "bullet3": "Sabe exactamente qué entrenar — manejo de objeciones, descubrimiento, cierre",
+        "bullet4": "Coaching basado en datos que escala"
+      },
+      "builtForManagers": {
+        "label": "Hecho para managers",
+        "title": "Todo lo que necesitas para liderar tu equipo",
+        "value1Title": "Ve quién va adelante y quién atrás",
+        "value1Desc": "Ranking de equipo con puntuaciones promedio por vendedor. Identifica a los mejores y quién necesita coaching — de un vistazo, sin escuchar cada llamada.",
+        "value2Title": "Entrena a los vendedores correctos en el momento adecuado",
+        "value2Desc": "Insights accionables te dicen exactamente qué discutir. 'Marcus necesita trabajar manejo de objeciones' — para que sepas qué 1:1 priorizar y qué cubrir.",
+        "value3Title": "Tendencias y patrones de todo el equipo",
+        "value3Desc": "Entiende objeciones comunes en tu equipo, qué preguntas de descubrimiento funcionan mejor y dónde los vendedores flaquean. Coaching basado en datos, no intuición."
+      },
+      "whatYouGet": {
+        "label": "Lo que obtienes",
+        "title": "Visibilidad total. Cero suposiciones.",
+        "desc": "RepRadar te da los datos para entrenar eficazmente. Ve el rendimiento de cada vendedor, entiende tendencias y ten las conversaciones adecuadas en el momento adecuado.",
+        "cap1": "Ranking de equipo con puntuaciones promedio de llamadas",
+        "cap2": "Historial de llamadas y tendencias de puntuación por vendedor",
+        "cap3": "Identifica quién necesita coaching — y por qué",
+        "cap4": "Omite la preparación del 1:1 — ve exactamente qué discutir",
+        "cap5": "Rastrea la mejora en el tiempo",
+        "cap6": "No más muestreo de llamadas — la IA hace el trabajo"
+      },
+      "skip1on1": {
+        "title": "Omite la preparación del 1:1",
+        "desc": "Entra a cada 1:1 sabiendo exactamente qué discutir. RepRadar muestra los consejos de mejora para cada vendedor — para que puedas tener conversaciones concretas y accionables en vez de check-ins genéricos.",
+        "allCallsAnalyzed": "de llamadas analizadas",
+        "noSpotChecking": "Sin muestreo. Sin lagunas."
+      },
+      "cta": {
+        "title": "¿Listo para ver el rendimiento de tu equipo?",
+        "subtitle": "Contáctanos para una demo o empieza gratis con tu equipo.",
+        "getStarted": "Empezar",
+        "contactUs": "Contáctanos"
+      }
+    },
+    "enterprise": {
+      "hero": {
+        "label": "Enterprise",
+        "headline": "RepRadar hecho para tu organización",
+        "subheadline": "Despliegue a medida, SSO, seguridad y soporte dedicado. RepRadar escala con tu organización de ventas — ya seas 50 o 500 vendedores. Cumplimos tus requisitos de cumplimiento e integramos con tu stack.",
+        "contactSales": "Contactar ventas",
+        "requestDemo": "Solicitar demo",
+        "checklist1": "Despliegue a medida",
+        "checklist2": "SSO / SAML",
+        "checklist3": "SOC 2",
+        "checklist4": "Soporte dedicado"
+      },
+      "standardLimits": {
+        "title": "Limitaciones SaaS estándar",
+        "bullet1": "Los datos deben vivir en la nube compartida — cumplimiento dice no",
+        "bullet2": "Sin SSO — los vendedores gestionan otro login",
+        "bullet3": "Soporte genérico — nadie conoce tu organización",
+        "bullet4": "Uno para todos — no encaja con tu flujo"
+      },
+      "repRadarEnterprise": {
+        "title": "RepRadar Enterprise",
+        "bullet1": "Despliega en tu entorno — tus datos, tus reglas",
+        "bullet2": "SSO con SAML, Okta, Azure AD — un solo login",
+        "bullet3": "Success manager dedicado — conocemos tu equipo",
+        "bullet4": "Integraciones a medida — encaja con tu stack"
+      },
+      "builtForScale": {
+        "label": "Hecho para escalar",
+        "title": "Todo lo que los equipos enterprise necesitan",
+        "value1Title": "Despliegue a medida",
+        "value1Desc": "Ejecuta RepRadar en tu entorno — on-premise, nube privada o híbrido. Desplegamos según tus especificaciones, integramos con tu stack y cumplimos tus requisitos de residencia de datos.",
+        "value2Title": "SSO y seguridad enterprise",
+        "value2Desc": "Single sign-on con SAML, Okta, Azure AD. Cumplimiento SOC 2, cifrado en reposo y en tránsito. Tus datos de llamadas permanecen bajo tu control.",
+        "value3Title": "Soporte dedicado",
+        "value3Desc": "Soporte con SLA, success manager dedicado e integraciones a medida. Te acompañamos desde el despliegue hasta la escala."
+      },
+      "whatsIncluded": {
+        "label": "Qué incluye",
+        "title": "Conjunto completo de funciones enterprise",
+        "desc": "Los planes enterprise incluyen todo lo de Teams, más flexibilidad de despliegue, controles de seguridad y soporte premium.",
+        "cap1": "Despliegue on-premise o nube privada",
+        "cap2": "SSO SAML / Okta / Azure AD",
+        "cap3": "Infraestructura conforme a SOC 2",
+        "cap4": "Políticas de retención de datos a medida",
+        "cap5": "Success manager dedicado",
+        "cap6": "Soporte prioritario con SLA",
+        "cap7": "Integraciones a medida (CRM, LMS, etc.)",
+        "cap8": "Precios por volumen para equipos grandes",
+        "deploymentLabel": "Opciones de despliegue",
+        "deploy1": "On-premise",
+        "deploy2": "Nube privada (AWS, GCP, Azure)",
+        "deploy3": "Híbrido",
+        "deploy4": "Tus requisitos de residencia de datos"
+      },
+      "securityCompliance": {
+        "title": "Seguridad y cumplimiento",
+        "desc": "Tus datos de llamadas son sensibles. Los tratamos así. Infraestructura conforme a SOC 2 Type II, cifrado en todos lados y controles que cumplen el estándar para industrias reguladas.",
+        "compliance1": "SOC 2 Type II",
+        "compliance2": "Cifrado en reposo y en tránsito",
+        "compliance3": "Control de acceso por roles",
+        "compliance4": "Registros de auditoría"
+      },
+      "cta": {
+        "title": "¿Listo para enterprise?",
+        "subtitle": "Contáctanos para precios a medida, una demo u opciones de despliegue.",
+        "contactSales": "Contactar ventas",
+        "requestDemo": "Solicitar demo"
+      }
+    },
+    "pricingPage": {
+      "hero": {
+        "label": "Precios",
+        "title": "Precios simples y transparentes",
+        "subtitle": "Empieza con una llamada gratis. Sin tarjeta de crédito. Actualiza cuando quieras para mejorar cada llamada."
+      },
+      "freeTrial": {
+        "title": "Prueba RepRadar gratis",
+        "desc1": "1 llamada, hasta 45 minutos. Ve tu puntuación, momentos clave y consejos de mejora.",
+        "desc2": "Sin tarjeta de crédito. Actualiza para continuar.",
+        "cta": "Empezar prueba gratis"
+      },
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "period": "por asiento / mes",
+          "desc": "Para vendedores individuales empezando",
+          "callsLabel": "llamadas por asiento",
+          "maxDuration": "1 hora 30 min",
+          "overage": "$4.00/llamada",
+          "cta": "Empezar prueba gratis",
+          "mostPopular": "Más popular",
+          "feature1": "Puntuaciones IA y consejos de mejora",
+          "feature2": "Ratio de palabra y momentos clave",
+          "feature3": "Informes por email después de cada llamada",
+          "feature4": "Sincronización Google Calendar",
+          "feature5": "Historial de llamadas y dashboard"
+        },
+        "pro": {
+          "name": "Pro",
+          "period": "por asiento / mes",
+          "desc": "Para vendedores que quieren mejorar más rápido",
+          "callsLabel": "llamadas por asiento",
+          "maxDuration": "1 hora 30 min",
+          "overage": "$3.00/llamada",
+          "cta": "Empezar prueba gratis",
+          "mostPopular": "Más popular",
+          "feature1": "Todo en Starter",
+          "feature2": "45 llamadas al mes",
+          "feature3": "Análisis prioritario",
+          "feature4": "Exportación e integraciones",
+          "feature5": "Soporte dedicado"
+        },
+        "teams": {
+          "name": "Teams",
+          "period": "al mes",
+          "desc": "Para equipos de hasta 5 vendedores",
+          "callsLabel": "llamadas compartidas",
+          "seats": "5 asientos incluidos",
+          "maxDuration": "1 hora 30 min",
+          "overage": "$2.50/llamada",
+          "extraSeat": "+$35/asiento",
+          "cta": "Empezar prueba gratis",
+          "mostPopular": "Más popular",
+          "feature1": "Todo en Pro",
+          "feature2": "100 llamadas compartidas en el equipo",
+          "feature3": "Ranking de equipo",
+          "feature4": "Dashboard de manager",
+          "feature5": "Controles de admin",
+          "feature6": "Asientos extra: +$35/asiento"
+        }
+      },
+      "limitsBilling": {
+        "label": "Cómo funciona",
+        "title": "Límites y facturación",
+        "callDurationTitle": "Duración de llamada",
+        "callDurationDesc": "Máximo 1 hora 30 min por llamada. El bot sale automáticamente a 1 hora 30 min para mantener los costes predecibles. La mayoría de llamadas de descubrimiento son 30–45 minutos.",
+        "overageTitle": "Exceso",
+        "overageDesc": "¿Necesitas más llamadas? El exceso se factura por llamada al precio indicado en cada plan. Sin cargos sorpresa. El uso se rastrea en tu dashboard."
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "desc": "Despliegue a medida, SSO, seguridad y soporte dedicado para organizaciones más grandes. Precios por volumen disponibles.",
+        "contactSales": "Contactar ventas"
+      },
+      "cta": {
+        "title": "¿Listo para mejorar cada llamada?",
+        "subtitle": "Empieza con una llamada gratis. Sin tarjeta de crédito.",
+        "startFreeTrial": "Empezar prueba gratis"
+      }
+    },
+    "contact": {
+      "label": "Contacto",
+      "title": "Contáctanos",
+      "subtitle": "¿Tienes preguntas o quieres saber más? Nos encantaría saber de ti.",
+      "sendMessage": "Envíanos un mensaje",
+      "formDesc": "Completa el formulario y te responderemos en 24 horas.",
+      "thanks": "¡Gracias por contactarnos!",
+      "thanksDesc": "Te responderemos en 24 horas.",
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "tu@empresa.com",
+      "messagePlaceholder": "¿En qué podemos ayudarte?",
+      "submit": "Enviar mensaje"
+    },
+    "help": {
+      "label": "Ayuda",
+      "title": "¿Cómo podemos ayudarte?",
+      "subtitle": "Encuentra respuestas a preguntas comunes o contáctanos.",
+      "searchPlaceholder": "Buscar...",
+      "faqTitle": "Preguntas frecuentes",
+      "stillNeedHelp": "¿Sigues necesitando ayuda?",
+      "supportDesc": "Nuestro equipo de soporte está aquí. Escríbenos y te responderemos en 24 horas.",
+      "contactSupport": "Contactar soporte",
+      "faq1q": "¿Cómo conecto mi calendario?",
+      "faq1a": "Ve a Ajustes y conecta tu Google Calendar. RepRadar sincronizará tus reuniones y se unirá automáticamente como bot cuando empiecen las llamadas. Sin configuración manual.",
+      "faq2q": "¿Qué datos almacenáis?",
+      "faq2a": "Almacenamos transcripciones y resultados de análisis para tu dashboard e informes. Puedes eliminar tus datos en cualquier momento desde Ajustes. Nunca compartimos tus datos con terceros.",
+      "faq3q": "¿Cómo funciona la puntuación con IA?",
+      "faq3a": "Nuestra IA usa una rúbrica estricta para puntuar descubrimiento, manejo de objeciones, cierre y rapport. Cada dimensión se puntúa del 1 al 5 con feedback específico.",
+      "faq4q": "¿Puedo usar RepRadar con Zoom y Google Meet?",
+      "faq4a": "Sí. RepRadar funciona con Zoom y Google Meet. Al conectar tu calendario, detectamos el tipo de reunión y nos unimos automáticamente.",
+      "faq5q": "¿Hay plan gratuito?",
+      "faq5a": "Sí. RepRadar es gratis para individuos y equipos pequeños. Contáctanos para precios enterprise."
+    },
+    "privacy": {
+      "label": "Legal",
+      "title": "Política de Privacidad",
+      "updated": "Última actualización: Febrero 2025",
+      "infoWeCollectTitle": "Información que recopilamos",
+      "infoWeCollect": "Recopilamos la información que proporcionas directamente (nombre, email, empresa) cuando te registras, nos contactas o usas nuestros servicios. También recopilamos transcripciones de llamadas y datos de reuniones cuando conectas tu calendario y usas RepRadar para analizar llamadas.",
+      "howWeUseTitle": "Cómo usamos tu información",
+      "howWeUse": "Usamos tu información para proporcionar, mantener y mejorar RepRadar; para generar análisis de llamadas con IA e insights; para comunicarnos contigo; y para cumplir obligaciones legales. No vendemos tu información personal.",
+      "cookiesTitle": "Cookies y seguimiento",
+      "cookies": "Usamos cookies y tecnologías similares para operar nuestro servicio, recordar tus preferencias y entender cómo usas RepRadar. Puedes controlar las cookies en la configuración de tu navegador.",
+      "thirdPartiesTitle": "Terceros",
+      "thirdParties": "Trabajamos con proveedores de servicios (p. ej. hosting, analytics, IA) para operar RepRadar. Estos proveedores están contractualmente obligados a proteger tus datos. Podemos compartir información cuando lo exija la ley o para proteger nuestros derechos.",
+      "dataRetentionTitle": "Retención y eliminación de datos",
+      "dataRetention": "Puedes eliminar tus datos en cualquier momento desde Ajustes. Conservamos los datos según lo necesario para proporcionar nuestros servicios y según lo exija la ley. Los datos eliminados se eliminan de nuestros sistemas en 30 días.",
+      "contactUsTitle": "Contáctanos",
+      "contactUsPrefix": "Para preguntas sobre privacidad, contáctanos en"
+    },
+    "terms": {
+      "label": "Legal",
+      "title": "Términos de Servicio",
+      "updated": "Última actualización: Febrero 2025",
+      "acceptanceTitle": "Aceptación de los términos",
+      "acceptance": "Al acceder o usar RepRadar, aceptas estos Términos de Servicio. Si no estás de acuerdo, no uses nuestro servicio.",
+      "useOfServiceTitle": "Uso del servicio",
+      "useOfService": "Puedes usar RepRadar solo para fines legales. Eres responsable de tu cuenta y de asegurar que tu uso cumpla las leyes aplicables y las políticas de tu organización.",
+      "restrictionsTitle": "Restricciones",
+      "restrictions": "No puedes: realizar ingeniería inversa ni intentar extraer nuestro código fuente; usar el servicio para dañar a otros o violar cualquier ley; revender o redistribuir el servicio sin nuestro permiso; o usar medios automatizados para acceder al servicio más allá de nuestra API.",
+      "ipTitle": "Propiedad intelectual",
+      "ip": "RepRadar y su contenido, funciones y funcionalidad nos pertenecen y están protegidos por copyright, marca registrada y otras leyes. Conservas la propiedad de tus datos; no reclamamos propiedad de tus transcripciones de llamadas ni de los resultados de análisis.",
+      "liabilityTitle": "Limitación de responsabilidad",
+      "liability": "En la máxima medida permitida por la ley, RepRadar se proporciona \"tal cual\" sin garantías de ningún tipo. No somos responsables de daños indirectos, incidentales, especiales o consecuentes derivados de tu uso del servicio.",
+      "terminationTitle": "Terminación",
+      "termination": "Podemos suspender o terminar tu acceso en cualquier momento por incumplimiento de estos términos. Puedes cancelar tu cuenta en cualquier momento. Al terminar, tu derecho a usar el servicio cesa inmediatamente.",
+      "contactTitle": "Contacto",
+      "contactPrefix": "Para preguntas sobre estos términos, contáctanos en"
+    },
+    "blog": {
+      "label": "Blog",
+      "title": "Consejos y novedades",
+      "subtitle": "Insights de coaching de ventas, actualizaciones de producto y mejores prácticas del equipo RepRadar.",
+      "comingSoon": "Próximamente",
+      "posts": {
+        "5-ways-to-improve-discovery-calls": {
+          "title": "5 formas de mejorar tus llamadas de descubrimiento",
+          "excerpt": "El descubrimiento es donde se ganan o pierden los deals. Cómo hacer mejores preguntas y descubrir el dolor real.",
+          "date": "20 feb 2025"
+        },
+        "ai-coaching-for-sales-teams": {
+          "title": "Por qué el coaching con IA es el futuro del enablement de ventas",
+          "excerpt": "El coaching tradicional no escala. El feedback con IA da a cada vendedor los insights que necesita.",
+          "date": "12 feb 2025"
+        },
+        "objection-handling-rubric": {
+          "title": "Construyendo una mejor rúbrica para manejar objeciones",
+          "excerpt": "Cómo diseñamos nuestra puntuación IA para manejo de objeciones — y qué aprendimos de más de 10.000 llamadas.",
+          "date": "5 feb 2025"
+        },
+        "talk-ratio-matters": {
+          "title": "El ratio de palabra importa más de lo que crees",
+          "excerpt": "El ratio ideal vendedor-prospecto, y cómo mejorar el tuyo sin sonar robótico.",
+          "date": "28 ene 2025"
+        },
+        "getting-started-repradar": {
+          "title": "Empezando con RepRadar",
+          "excerpt": "Guía paso a paso para conectar tu calendario y obtener tu primer análisis de llamada con IA.",
+          "date": "15 ene 2025"
+        }
+      }
+    }
+  }
+}
