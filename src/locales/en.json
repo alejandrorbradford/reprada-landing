@@ -1,14 +1,14 @@
 {
   "hero": {
     "label": "AI sales coach",
-    "headline": "Score your sales calls. Improve your conversions.",
-    "subheadline": "Get AI-powered scores on discovery, objections, and closing. See exactly where deals stall and how to improve. Connect Google Calendar and get insights after every call.",
-    "getStarted": "Get started",
+    "headline": "Sales Coaching on Autopilot",
+    "subheadline": "Get a personalized coaching email the moment your call ends — your score, talk ratio, key moments, and exactly what to say differently to close more deals.",
+    "getStarted": "Start for free",
     "signIn": "Sign in",
     "noCreditCard": "No credit card required"
   },
   "header": {
-    "announcement": "RepRadar — Your AI sales coach. Score calls, close more deals. Start free →",
+    "announcement": "RepRadar — Sales Coaching on Autopilot. AI scores every call, automatically. Start free →",
     "solutions": "Solutions",
     "resources": "Resources",
     "pricing": "Pricing",
@@ -127,7 +127,7 @@
     "title3": "Director of Sales Ops, B2B software (25 reps)"
   },
   "logoMarquee": {
-    "trustedBy": "Trusted by sales teams who close more deals"
+    "trustedBy": "Works with the tools your team already uses"
   },
   "pricingSection": {
     "label": "Pricing",
@@ -440,7 +440,7 @@
     "privacy": {
       "label": "Legal",
       "title": "Privacy Policy",
-      "updated": "Last updated: February 2025",
+      "updated": "Last updated: June 2026",
       "infoWeCollectTitle": "Information we collect",
       "infoWeCollect": "We collect information you provide directly (name, email, company) when you sign up, contact us, or use our services. We also collect call transcripts and meeting data when you connect your calendar and use RepRadar to analyze calls.",
       "howWeUseTitle": "How we use your information",
@@ -457,7 +457,7 @@
     "terms": {
       "label": "Legal",
       "title": "Terms of Service",
-      "updated": "Last updated: February 2025",
+      "updated": "Last updated: June 2026",
       "acceptanceTitle": "Acceptance of terms",
       "acceptance": "By accessing or using RepRadar, you agree to these Terms of Service. If you do not agree, do not use our service.",
       "useOfServiceTitle": "Use of the service",
