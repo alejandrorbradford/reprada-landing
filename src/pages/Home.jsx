@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Hero from "../components/Hero";
 import HowItWorks from "../components/HowItWorks";
+import SampleReportSection from "../components/SampleReportSection";
 import Features from "../components/Features";
 import Testimonials from "../components/Testimonials";
 import LogoMarquee from "../components/LogoMarquee";
@@ -19,6 +20,7 @@ export default function Home() {
     <>
       <Hero />
       <HowItWorks />
+      <SampleReportSection />
       <Features />
       <Testimonials />
       <LogoMarquee />

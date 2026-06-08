@@ -49,6 +49,47 @@
     "step3Title": "Improve and close more",
     "step3Desc": "Dashboard, leaderboard, and actionable feedback for every rep. Track progress, coach the right moments."
   },
+  "sampleReport": {
+    "label": "Sample report",
+    "title": "See a real call report",
+    "subtitle": "This is exactly what you get after every call. Toggle between a strong call and a rough one — which one is yours?",
+    "toggle": {
+      "strong": "Strong call",
+      "rough": "Rough call"
+    },
+    "discoveryCall": "Discovery call",
+    "leadInterest": "Lead interest",
+    "leadInterestLabels": {
+      "strong": "Strong",
+      "warm": "Warm",
+      "mixed": "Mixed",
+      "cool": "Cool",
+      "low": "Low"
+    },
+    "talkRatio": "Talk ratio",
+    "inSweetSpot": "in sweet spot",
+    "aimFor": "aim for",
+    "keyMoments": "Key moments",
+    "improvementTips": "Improvement tips",
+    "metrics": {
+      "questions": "Questions",
+      "target": "target",
+      "interruptions": "Interruptions",
+      "pauses": "Pauses",
+      "nextSteps": "Next steps",
+      "nextStepsYes": "Defined",
+      "nextStepsNo": "None"
+    },
+    "momentType": {
+      "objection": "Objection",
+      "question": "Question",
+      "discovery": "Discovery",
+      "closing": "Closing",
+      "rapport": "Rapport",
+      "buying-signal": "Buying signal",
+      "risk": "Risk"
+    }
+  },
   "features": {
     "connectCalendar": {
       "label": "Connect Calendar",

@@ -49,6 +49,47 @@
     "step3Title": "Mejora y cierra más",
     "step3Desc": "Dashboard, ranking y feedback accionable para cada vendedor. Mide el progreso y entrena en el momento adecuado."
   },
+  "sampleReport": {
+    "label": "Informe de ejemplo",
+    "title": "Mira un informe real de llamada",
+    "subtitle": "Esto es exactamente lo que recibes después de cada llamada. Alterna entre una llamada fuerte y una floja — ¿cuál es la tuya?",
+    "toggle": {
+      "strong": "Llamada fuerte",
+      "rough": "Llamada floja"
+    },
+    "discoveryCall": "Llamada de descubrimiento",
+    "leadInterest": "Interés del lead",
+    "leadInterestLabels": {
+      "strong": "Fuerte",
+      "warm": "Cálido",
+      "mixed": "Mixto",
+      "cool": "Frío",
+      "low": "Bajo"
+    },
+    "talkRatio": "Ratio de palabra",
+    "inSweetSpot": "en el punto óptimo",
+    "aimFor": "apunta a",
+    "keyMoments": "Momentos clave",
+    "improvementTips": "Consejos de mejora",
+    "metrics": {
+      "questions": "Preguntas",
+      "target": "objetivo",
+      "interruptions": "Interrupciones",
+      "pauses": "Pausas",
+      "nextSteps": "Próximos pasos",
+      "nextStepsYes": "Definidos",
+      "nextStepsNo": "Ninguno"
+    },
+    "momentType": {
+      "objection": "Objeción",
+      "question": "Pregunta",
+      "discovery": "Descubrimiento",
+      "closing": "Cierre",
+      "rapport": "Rapport",
+      "buying-signal": "Señal de compra",
+      "risk": "Riesgo"
+    }
+  },
   "features": {
     "connectCalendar": {
       "label": "Conectar calendario",

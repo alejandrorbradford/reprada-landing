@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import SectionLabel from "./SectionLabel";
 import Button from "./Button";
-import CallReportCard from "./mockups/CallReportCard";
+import SampleReport from "./mockups/SampleReport";
 import { useLocale } from "../contexts/LocaleContext";
 
 const stagger = {
@@ -73,7 +73,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           >
-            <CallReportCard />
+            <SampleReport variant="strong" />
           </motion.div>
         </motion.div>
       </div>
